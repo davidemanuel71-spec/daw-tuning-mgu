@@ -2276,6 +2276,15 @@ class HudApp {
             c.uniform(ref, 'u_hole', this._hole(w));
             c.uniform(ref, 'u_holeR', [this._holeRadius(w)]);
             c.uniform(ref, 'u_holeCut', [isNum(w.holeCut) ? w.holeCut : 0]);
+            {   // an exact window outline (target px, convex, clockwise): "holePoly" [[x, y], ...], closed by the first point again
+                const hp = Array.isArray(w.holePoly) ? w.holePoly.filter((q) => Array.isArray(q) && isNum(q[0]) && isNum(q[1])).slice(0, 40) : [];
+                const flat = [];
+                hp.forEach((q) => flat.push(q[0] - w.x, q[1] - w.y));
+                if (hp.length) flat.push(hp[0][0] - w.x, hp[0][1] - w.y);
+                while (flat.length < 82) flat.push(0);
+                c.uniform(ref, 'u_poly', flat, { type: 'vec2' });
+                c.uniform(ref, 'u_np', [hp.length >= 3 ? hp.length : 0]);
+            }
             const pn = w.panel;     // [[top x, y], [middle x, y], [bottom x, y], inset]
             c.uniform(ref, 'u_panel', pn ? [pn[0][0] - w.x, pn[0][1] - w.y, pn[1][0] - w.x, pn[1][1] - w.y] : [0, 0, 0, 1]);
             c.uniform(ref, 'u_panelB', pn ? [pn[2][0] - w.x, pn[2][1] - w.y, pn[3], 0] : [0, 2, 0, 0]);

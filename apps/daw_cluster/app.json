@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.14.1",
+  "version": "0.14.2",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -118,11 +118,15 @@
       "key": "hudLayout",
       "label": "Theme (when not by drive mode)",
       "type": "choice",
-      "default": "daw_stock_xmas",
+      "default": "daw_full_waze",
       "options": [
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "daw_full_waze",
+          "DAW FULL WAZE"
         ],
         [
           "daw_stock",
@@ -179,6 +183,10 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_full_waze",
+          "DAW FULL WAZE"
+        ],
+        [
           "daw_stock",
           "Original"
         ],
@@ -227,6 +235,10 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_full_waze",
+          "DAW FULL WAZE"
+        ],
+        [
           "daw_stock",
           "Original"
         ],
@@ -273,6 +285,10 @@
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "daw_full_waze",
+          "DAW FULL WAZE"
         ],
         [
           "daw_stock",
@@ -327,6 +343,10 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_full_waze",
+          "DAW FULL WAZE"
+        ],
+        [
           "daw_stock",
           "Original"
         ],
@@ -377,6 +397,10 @@
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "daw_full_waze",
+          "DAW FULL WAZE"
         ],
         [
           "daw_stock",
