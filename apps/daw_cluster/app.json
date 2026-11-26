@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.10.1",
+  "version": "0.11.1",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -195,6 +195,34 @@
         [
           "daw",
           "DAW Tuning"
+        ],
+        [
+          "daw_s",
+          "DAW Tuning · mica"
+        ],
+        [
+          "daw_red",
+          "Craciun Rosu"
+        ],
+        [
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_ice",
+          "Craciun Gheata"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_gold",
+          "Craciun Auriu"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
         ]
       ]
     },
@@ -285,6 +313,34 @@
         [
           "daw",
           "DAW Tuning"
+        ],
+        [
+          "daw_s",
+          "DAW Tuning · mica"
+        ],
+        [
+          "daw_red",
+          "Craciun Rosu"
+        ],
+        [
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_ice",
+          "Craciun Gheata"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_gold",
+          "Craciun Auriu"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
         ]
       ]
     },
@@ -369,6 +425,34 @@
         [
           "daw",
           "DAW Tuning"
+        ],
+        [
+          "daw_s",
+          "DAW Tuning · mica"
+        ],
+        [
+          "daw_red",
+          "Craciun Rosu"
+        ],
+        [
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_ice",
+          "Craciun Gheata"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_gold",
+          "Craciun Auriu"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
         ]
       ]
     },
@@ -453,6 +537,34 @@
         [
           "daw",
           "DAW Tuning"
+        ],
+        [
+          "daw_s",
+          "DAW Tuning · mica"
+        ],
+        [
+          "daw_red",
+          "Craciun Rosu"
+        ],
+        [
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_ice",
+          "Craciun Gheata"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_gold",
+          "Craciun Auriu"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
         ]
       ]
     },
@@ -541,6 +653,34 @@
         [
           "daw",
           "DAW Tuning"
+        ],
+        [
+          "daw_s",
+          "DAW Tuning · mica"
+        ],
+        [
+          "daw_red",
+          "Craciun Rosu"
+        ],
+        [
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_ice",
+          "Craciun Gheata"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_gold",
+          "Craciun Auriu"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
         ]
       ]
     },
@@ -629,6 +769,34 @@
         [
           "daw",
           "DAW Tuning"
+        ],
+        [
+          "daw_s",
+          "DAW Tuning · mica"
+        ],
+        [
+          "daw_red",
+          "Craciun Rosu"
+        ],
+        [
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_ice",
+          "Craciun Gheata"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_gold",
+          "Craciun Auriu"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
         ]
       ]
     },
