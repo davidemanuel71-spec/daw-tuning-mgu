@@ -2275,6 +2275,7 @@ class HudApp {
             c.uniform(ref, 'u_line', [w.line[0] - w.x, w.line[1] - w.x, w.line[2] - w.y, w.line[3] - w.x]);
             c.uniform(ref, 'u_hole', this._hole(w));
             c.uniform(ref, 'u_holeR', [this._holeRadius(w)]);
+            c.uniform(ref, 'u_holeCut', [isNum(w.holeCut) ? w.holeCut : 0]);
             const pn = w.panel;     // [[top x, y], [middle x, y], [bottom x, y], inset]
             c.uniform(ref, 'u_panel', pn ? [pn[0][0] - w.x, pn[0][1] - w.y, pn[1][0] - w.x, pn[1][1] - w.y] : [0, 0, 0, 1]);
             c.uniform(ref, 'u_panelB', pn ? [pn[2][0] - w.x, pn[2][1] - w.y, pn[3], 0] : [0, 2, 0, 0]);
