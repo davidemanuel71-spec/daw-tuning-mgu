@@ -186,23 +186,23 @@
     34
    ],
    "hole": [
-    520,
-    165,
-    880,
-    330
+    560,
+    175,
+    800,
+    305
    ],
    "holeWhen": "mapUp",
    "holeInset": 0,
    "class": "content",
-   "holeRadius": 165,
+   "holeRadius": 150,
    "style": "daw",
    "clear": [
-    520,
-    165,
-    880,
-    330
+    560,
+    175,
+    800,
+    305
    ],
-   "clearRadius": 165
+   "clearRadius": 150
   },
   {
    "id": "spd_us0",
