@@ -194,7 +194,8 @@
    "holeWhen": "mapUp",
    "holeInset": 0,
    "class": "content",
-   "holeRadius": 34
+   "holeRadius": 34,
+   "style": "daw"
   },
   {
    "id": "spd_us0",
@@ -639,7 +640,7 @@
    "id": "speed",
    "type": "text",
    "z": 5,
-   "x": 412,
+   "x": 490,
    "y": 556,
    "w": 300,
    "h": 68,
@@ -652,7 +653,7 @@
    "id": "speed_unit",
    "type": "text",
    "z": 5,
-   "x": 724,
+   "x": 736,
    "y": 594,
    "w": 100,
    "h": 29,
@@ -665,9 +666,9 @@
    "id": "gear",
    "type": "text",
    "z": 5,
-   "x": 1100,
+   "x": 1020,
    "y": 556,
-   "w": 260,
+   "w": 160,
    "h": 65,
    "text": "{{gearnum}}",
    "font": "s_gear",
@@ -684,19 +685,6 @@
    "w": 220,
    "h": 29,
    "text": "1/min x 1000",
-   "font": "s_unit",
-   "color": "dim",
-   "align": "center"
-  },
-  {
-   "id": "scale_unit",
-   "type": "text",
-   "z": 5,
-   "x": 520,
-   "y": 586,
-   "w": 140,
-   "h": 29,
-   "text": "{{u:speedLc}}",
    "font": "s_unit",
    "color": "dim",
    "align": "center"
@@ -929,7 +917,7 @@
    "class": "content",
    "z": 6,
    "x": 905,
-   "y": 6,
+   "y": 134,
    "w": 110,
    "h": 110
   }

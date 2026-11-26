@@ -39,7 +39,7 @@ mgu.run({
         new Page(ctx, hud, {
             title: ctx.spec.title, what: 'cluster',
             look: { name: 'Themes', style: 'hero', tags: { daw: 'DAW Tuning', daw_red: 'Craciun · rosu', daw_ice: 'Craciun · gheata', daw_gold: 'Craciun · auriu' } },
-            tabs: ['look', 'readouts', 'badge', 'map', 'alerts', 'gmeter', 'settings'],
+            tabs: ['look', 'map', 'settings'],
             settings: ['units', 'tempUnits', 'pressureUnits', 'clock', 'timeZone', 'tankLitres', 'redline', 'shiftBefore', 'coldGuard', 'showBoost', 'nightDim', 'cameraNotch', 'keepStrip', 'autoStart', 'holiday', 'demo'],
             // the drive mode check's candidates this app's app.json listens to (issue #8; shared/hud.js modeDiagLines)
             modeCheck: ['HMI', 'MDrive', 'Engine', 'Sport2'],

@@ -1609,6 +1609,198 @@ void main() {
 }
 `;
 
+const DAWV = `// The DAW Tuning theme (after MVIEW: the same geometry, drawn as glowing lines in the theme colour; the M view theme in one cluster-render "effect" layer (GLSL ES 1.00), after the Live Cockpit's M view: black
+// everywhere (opaque), the speed scale on the left and the rev scale on the right (its mirror): a white outer line with
+// rounded corners (u_path, the left one, from its bottom end to its top end), marks inside it, the band inside the line
+// lit from 0 up to the value with red dots by the needle, a red needle across the line, red / yellow marks outside the
+// rev line from the redline; a fuel dial in the lower left corner and an oil temperature dial in the lower right one (its
+// mirror); a line under the speed and under the gear, and the bottom lines towards the middle. The middle is cut
+// see-through for the Waze map while u_hole is set ("mapLive": only u_hole changes, no rebuild). v_uv (0,0) is the
+// top-left. Ported from Asksket's f90 branch of this repo (MIT, issue #15).
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+varying vec2 v_uv;
+uniform vec2 u_size;
+uniform vec2 u_path[16];   // the left scale's line, layer px: the points where its straight pieces and arcs meet
+uniform vec4 u_arc[16];    // piece i (point i to i + 1): arc centre x, y, radius, sweep (radians); radius 0 = straight
+uniform float u_cum[16];   // arc length at each point
+uniform float u_n;         // points used
+uniform vec4 u_scale;      // arc length at 0 and at the top mark, -, the line's whole length
+uniform vec4 u_ticks;      // speed: numbered marks, steps per number; rpm: the same
+uniform float u_speed;     // 0..1
+uniform float u_rpm;       // 0..1
+uniform float u_redFrom;   // 0..1 of the rev scale
+uniform float u_orange;    // 0..1, orange marks from here to the redline
+uniform vec4 u_dial;       // fuel dial: centre x, y, radius (the oil dial is its mirror)
+uniform vec2 u_dialAng;    // its angle (degrees, 0 = right, 90 = down) at full and at empty
+uniform float u_fuel;      // 0..1
+uniform float u_oil;       // 0..1 (50..150 C)
+uniform vec4 u_line;       // the line under the speed: from x, to x, y; the bottom line runs on to x
+uniform vec4 u_hole;       // the map window x, y, w, h (w 0 = none)
+uniform float u_holeR;
+uniform vec4 u_panel;      // the dark panel's inner edge: its top point x, y and its point at the middle x, y
+uniform vec4 u_panelB;     // its bottom point x, y; z: how far inside the line the panel starts (0 = no panel)
+uniform float u_oval;      // > 0: the map window is an oval inside u_hole, feathered over this many px
+
+uniform vec3 u_white;      // the scale numbers and lines (the theme's fg)
+uniform vec3 u_accent;     // needles, glow and rev-bar lead (the theme's arc)
+#define WHITE u_white
+const vec3 GREY = vec3(0.55, 0.57, 0.6);
+const vec3 PANEL = vec3(0.105, 0.11, 0.12);
+#define RED u_accent
+const vec3 ORANGE = vec3(1.0, 0.6, 0.1);
+const vec3 BLUE = vec3(0.25, 0.55, 1.0);
+
+float cov(float d) { return clamp(0.5 - d, 0.0, 1.0); }
+vec3 put(vec3 c, vec3 col, float a) { return mix(c, col, clamp(a, 0.0, 1.0)); }
+
+void main() {
+    vec2 p = v_uv * u_size;
+    bool right = p.x > u_size.x * 0.5;
+    vec2 q = right ? vec2(u_size.x - p.x, p.y) : p;
+    vec3 c = vec3(0.0);
+
+    // the nearest point of the line: its arc length s and the signed distance sd (+ inside the scale); the corners
+    // are true arcs, so the curve stays round
+    float best = 1e6, s = 0.0, sd = 0.0;
+    for (int i = 0; i < 15; i++) {
+        if (float(i) >= u_n - 1.0) break;
+        vec2 a = u_path[i], b = u_path[i + 1];
+        vec4 ar = u_arc[i];
+        vec2 n, t;
+        float along;
+        if (ar.z > 0.5) {
+            vec2 ca = a - ar.xy, cq = q - ar.xy;
+            float rel = atan(ca.x * cq.y - ca.y * cq.x, dot(ca, cq));     // q's angle from a's, signed
+            float h = clamp(rel / ar.w, 0.0, 1.0);
+            float ang = atan(ca.y, ca.x) + ar.w * h;
+            vec2 u = vec2(cos(ang), sin(ang));
+            n = ar.xy + u * ar.z;
+            t = vec2(-u.y, u.x) * sign(ar.w);
+            along = abs(ar.w) * ar.z * h;
+        } else {
+            vec2 ba = b - a;
+            float L = max(length(ba), 0.001);
+            float h = clamp(dot(q - a, ba) / (L * L), 0.0, 1.0);
+            n = a + ba * h; t = ba / L; along = h * L;
+        }
+        vec2 d = q - n;
+        float dist = length(d);
+        if (dist < best) { best = dist; s = u_cum[i] + along; sd = t.x * d.y - t.y * d.x; }
+    }
+    float total = u_scale.w, s0 = u_scale.x, s1 = u_scale.y;
+    float v = right ? u_rpm : u_speed;
+    float sv = mix(s0, s1, v);
+    float f = (s - s0) / (s1 - s0);
+
+    // inside the scale: a glow in the theme colour, strongest in the bottom corner and by the line, fading towards the middle
+    if (u_panelB.z > 0.0 && sd > 0.0) {
+        float low = exp(-max(f, 0.0) * 2.6);
+        float g = exp(-sd / 38.0) * (0.2 + 0.8 * low);
+        float edge = clamp((u_panelB.y - q.y) / max(u_panelB.y - u_panel.y, 1.0), 0.0, 1.0);
+        c = put(c, RED * 0.6, g * (0.25 + 0.5 * edge) * smoothstep(0.0, 6.0, sd));
+    }
+
+    if (best < 140.0) {
+        float ends = smoothstep(0.0, 40.0, s) * smoothstep(0.0, 30.0, total - s);
+        float lit = step(s0 - 6.0, s) * step(s, sv);
+        // a soft glow of the line itself, brighter along the lit part
+        c = put(c, RED, exp(-abs(sd) / 9.0) * ends * (0.28 + 0.5 * lit));
+        // the lit band inside the line, brightest at the needle
+        if (s >= s0 - 6.0 && s <= sv && sd > 0.0 && sd < 70.0) {
+            float toward = 0.25 + 0.75 * exp(-(sv - s) / 260.0);
+            c = put(c, RED, toward * pow(1.0 - sd / 70.0, 2.0) * 0.55);
+        }
+        // the line: white, the lit part thicker in the theme colour
+        c = put(c, WHITE, cov(abs(sd) - 1.8) * ends);
+        c = put(c, RED, cov(abs(sd) - 3.4) * lit * ends);
+        c = put(c, WHITE, cov(abs(sd) - 1.4) * lit * ends * 0.85);
+        // the marks inside it: a long one at each number and a short one between two
+        vec2 tk = right ? u_ticks.zw : u_ticks.xy;
+        float stp = (s1 - s0) / (tk.x * tk.y);
+        float t = (s - s0) / stp, k = floor(t + 0.5);
+        float along = abs(t - k) * stp;
+        bool major = mod(k, tk.y) < 0.5;
+        float len = major ? 22.0 : 11.0;
+        if (k >= 0.0 && k <= tk.x * tk.y && sd > 0.0) {
+            float a = cov(along - (major ? 1.4 : 0.9)) * cov(sd - len) * smoothstep(2.0, 4.0, sd);
+            c = put(c, major ? WHITE : GREY, a * ends);
+        }
+        // the rev scale: red then orange dashes outside the line, from the redline on
+        if (right && f >= u_orange && f <= 1.0 && sd < -5.0 && sd > -15.0) {
+            float gap = cov(abs(mod(s - s0, 46.0) - 23.0) - 19.0);
+            c = put(c, f >= u_redFrom ? vec3(1.0, 0.12, 0.12) : vec3(1.0, 0.82, 0.1), cov(abs(sd + 10.0) - 3.5) * gap);
+        }
+        // the needle: a short bright bar across the line with a glow round it
+        float nb = cov(abs(s - sv) - 2.4) * cov(abs(sd) - 16.0);
+        c = put(c, WHITE, nb);
+        c = put(c, RED, exp(-abs(s - sv) / 14.0) * exp(-abs(sd) / 22.0) * 0.7);
+    }
+
+    // the corner dial: fuel (left) or oil temperature (right), its value as a red mark
+    vec2 dp = q - u_dial.xy;
+    float r = length(dp);
+    float ang = degrees(atan(dp.y, dp.x));
+    float a0 = u_dialAng.x, a1 = u_dialAng.y;
+    float df = (ang - a1) / (a0 - a1);          // 0 empty / cold .. 1 full / hot
+    float arcLen = radians(abs(a0 - a1)) * u_dial.z;
+    if (df > -0.03 && df < 1.03 && abs(r - u_dial.z) < 40.0) {
+        float inArc = smoothstep(-0.02, 0.0, df) * (1.0 - smoothstep(1.0, 1.02, df));
+        vec3 rim = WHITE;
+        if (!right && df < 0.12) rim = RED;
+        if (right && df < 0.15) rim = BLUE;
+        if (right && df > 0.85) rim = RED;
+        c = put(c, rim, cov(abs(r - u_dial.z) - 1.5) * inArc);
+        float dv = right ? u_oil : u_fuel;
+        float mk = cov(abs(df - dv) * arcLen - 3.0) * cov(abs(r - u_dial.z + 12.0) - 12.0);
+        c = put(c, RED, mk);
+        for (int j = 0; j < 3; j++) {
+            float tf = float(j) * 0.5;
+            c = put(c, WHITE, cov(abs(df - tf) * arcLen - 1.2) * cov(abs(r - u_dial.z + 8.0) - 8.0) * 0.9);
+        }
+    }
+
+    // the line under the speed (left) and under the gear (right), fading in from the outer end
+    if (q.x >= u_line.x && q.x <= u_line.y) {
+        float x0 = u_line.x + 56.0;
+        if (q.x < x0 - 8.0) {
+            // the double dash at the outer end
+            c = put(c, WHITE, cov(abs(abs(q.y - u_line.z) - 4.0) - 1.6));
+        } else if (q.x >= x0) {
+            float fade = smoothstep(x0, x0 + 60.0, q.x) * (1.0 - smoothstep(u_line.y - 4.0, u_line.y, q.x));
+            c = put(c, WHITE, cov(abs(q.y - u_line.z) - 1.2) * (0.35 + 0.65 * fade));
+        }
+    }
+    // the bottom line, on from the scale's bottom end towards the middle
+    vec2 b0 = u_path[0];
+    if (q.x >= b0.x && q.x <= u_line.w) {
+        float fade = 1.0 - smoothstep(u_line.w - 140.0, u_line.w, q.x);
+        c = put(c, GREY, cov(abs(q.y - b0.y) - 1.0) * fade);
+    }
+
+    float alpha = 1.0;
+    if (u_hole.z > 0.0 && u_oval > 0.0) {
+        // an oval window, its edge feathered into the black like BMW's map
+        vec2 hs = u_hole.zw * 0.5;
+        vec2 e = (p - (u_hole.xy + hs)) / hs;
+        float ed = (length(e) - 1.0) * min(hs.x, hs.y);     // about px outside the oval
+        alpha = smoothstep(-u_oval, 0.0, ed);
+    } else if (u_hole.z > 0.0) {
+        vec2 hs = u_hole.zw * 0.5;
+        vec2 hq = abs(p - (u_hole.xy + hs)) - (hs - vec2(u_holeR));
+        float hd = length(max(hq, 0.0)) + min(max(hq.x, hq.y), 0.0) - u_holeR;
+        alpha = clamp(hd + 0.5, 0.0, 1.0);
+        // a thin grey frame round the window
+        c = put(c, GREY, cov(abs(hd - 2.0) - 1.0) * 0.8);
+        alpha = max(alpha, cov(abs(hd - 2.0) - 1.0) * 0.8);
+    }
+    gl_FragColor = vec4(c, alpha);
+}
+`;
+
 const VDASH = `// The Vector theme in one cluster-render "effect" layer (GLSL ES 1.00): black, angled bracket lines (u_seg), a round
 // segmented rev counter (u_tach), four ring gauges (u_ring), three bars in the middle while no map shows (u_bar), and the
 // music panel on the right (u_panel: its backdrop; u_vinyl: a record that turns red while something plays; u_prog: the
@@ -1759,4 +1951,4 @@ void main() {
 }
 `;
 
-module.exports = { shiftbar: SHIFTBAR, arc: ARC, revbar: REVBAR, lights: LIGHTS, fill: FILL, box: BOX, grid: GRID, segbar: SEGBAR, mdash: MDASH, mtach: MTACH, sdash: SDASH, boxes: BOXES, atext: ATEXT, meter: METER, gmeter: GMETER, revarc: REVARC, tiles: TILES, ribbon: RIBBON, deco: DECO, mview: MVIEW, vdash: VDASH };
+module.exports = { shiftbar: SHIFTBAR, arc: ARC, revbar: REVBAR, lights: LIGHTS, fill: FILL, box: BOX, grid: GRID, segbar: SEGBAR, mdash: MDASH, mtach: MTACH, sdash: SDASH, boxes: BOXES, atext: ATEXT, meter: METER, gmeter: GMETER, revarc: REVARC, tiles: TILES, ribbon: RIBBON, deco: DECO, mview: MVIEW, dawview: DAWV, vdash: VDASH };
