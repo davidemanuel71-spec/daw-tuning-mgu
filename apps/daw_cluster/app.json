@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -126,11 +126,11 @@
         ],
         [
           "daw_stock",
-          "DAW Original"
+          "Original"
         ],
         [
           "daw_stock_waze",
-          "DAW Original + Waze"
+          "Original + Waze"
         ],
         [
           "daw_stock_xmas",
@@ -141,32 +141,12 @@
           "Fulgi + Waze"
         ],
         [
-          "daw_stock_mix",
-          "Brad si Fulg + Waze"
-        ],
-        [
-          "daw_stock_trees",
-          "4 Brazi + Waze"
-        ],
-        [
-          "daw_stock_flakes4",
-          "4 Fulgi + Waze"
-        ],
-        [
-          "daw_stock_xmas_only",
-          "Brad (fara harta)"
-        ],
-        [
           "daw_stock_bigtree",
-          "Brad mare in ceas"
-        ],
-        [
-          "daw_stock_bigtree_snow",
-          "Brad mare + fulgi"
+          "Brad mare"
         ],
         [
           "daw_stock_treepair",
-          "Doi brazi in ceas"
+          "Doi brazi"
         ],
         [
           "daw",
@@ -183,34 +163,6 @@
         [
           "daw_gold",
           "Craciun Auriu"
-        ],
-        [
-          "daw_blue",
-          "DAW Albastru"
-        ],
-        [
-          "daw_green",
-          "DAW Verde"
-        ],
-        [
-          "daw_violet",
-          "DAW Mov"
-        ],
-        [
-          "daw_amber",
-          "DAW Portocaliu"
-        ],
-        [
-          "daw_xtree",
-          "Craciun Brad"
-        ],
-        [
-          "daw_xlights",
-          "Craciun Luminite"
-        ],
-        [
-          "daw_silver",
-          "Craciun Argintiu"
         ]
       ]
     },
@@ -232,11 +184,11 @@
         ],
         [
           "daw_stock",
-          "DAW Original"
+          "Original"
         ],
         [
           "daw_stock_waze",
-          "DAW Original + Waze"
+          "Original + Waze"
         ],
         [
           "daw_stock_xmas",
@@ -247,32 +199,12 @@
           "Fulgi + Waze"
         ],
         [
-          "daw_stock_mix",
-          "Brad si Fulg + Waze"
-        ],
-        [
-          "daw_stock_trees",
-          "4 Brazi + Waze"
-        ],
-        [
-          "daw_stock_flakes4",
-          "4 Fulgi + Waze"
-        ],
-        [
-          "daw_stock_xmas_only",
-          "Brad (fara harta)"
-        ],
-        [
           "daw_stock_bigtree",
-          "Brad mare in ceas"
-        ],
-        [
-          "daw_stock_bigtree_snow",
-          "Brad mare + fulgi"
+          "Brad mare"
         ],
         [
           "daw_stock_treepair",
-          "Doi brazi in ceas"
+          "Doi brazi"
         ],
         [
           "daw",
@@ -289,34 +221,6 @@
         [
           "daw_gold",
           "Craciun Auriu"
-        ],
-        [
-          "daw_blue",
-          "DAW Albastru"
-        ],
-        [
-          "daw_green",
-          "DAW Verde"
-        ],
-        [
-          "daw_violet",
-          "DAW Mov"
-        ],
-        [
-          "daw_amber",
-          "DAW Portocaliu"
-        ],
-        [
-          "daw_xtree",
-          "Craciun Brad"
-        ],
-        [
-          "daw_xlights",
-          "Craciun Luminite"
-        ],
-        [
-          "daw_silver",
-          "Craciun Argintiu"
         ]
       ]
     },
@@ -332,11 +236,11 @@
         ],
         [
           "daw_stock",
-          "DAW Original"
+          "Original"
         ],
         [
           "daw_stock_waze",
-          "DAW Original + Waze"
+          "Original + Waze"
         ],
         [
           "daw_stock_xmas",
@@ -347,32 +251,12 @@
           "Fulgi + Waze"
         ],
         [
-          "daw_stock_mix",
-          "Brad si Fulg + Waze"
-        ],
-        [
-          "daw_stock_trees",
-          "4 Brazi + Waze"
-        ],
-        [
-          "daw_stock_flakes4",
-          "4 Fulgi + Waze"
-        ],
-        [
-          "daw_stock_xmas_only",
-          "Brad (fara harta)"
-        ],
-        [
           "daw_stock_bigtree",
-          "Brad mare in ceas"
-        ],
-        [
-          "daw_stock_bigtree_snow",
-          "Brad mare + fulgi"
+          "Brad mare"
         ],
         [
           "daw_stock_treepair",
-          "Doi brazi in ceas"
+          "Doi brazi"
         ],
         [
           "daw",
@@ -389,34 +273,6 @@
         [
           "daw_gold",
           "Craciun Auriu"
-        ],
-        [
-          "daw_blue",
-          "DAW Albastru"
-        ],
-        [
-          "daw_green",
-          "DAW Verde"
-        ],
-        [
-          "daw_violet",
-          "DAW Mov"
-        ],
-        [
-          "daw_amber",
-          "DAW Portocaliu"
-        ],
-        [
-          "daw_xtree",
-          "Craciun Brad"
-        ],
-        [
-          "daw_xlights",
-          "Craciun Luminite"
-        ],
-        [
-          "daw_silver",
-          "Craciun Argintiu"
         ]
       ]
     },
@@ -432,11 +288,11 @@
         ],
         [
           "daw_stock",
-          "DAW Original"
+          "Original"
         ],
         [
           "daw_stock_waze",
-          "DAW Original + Waze"
+          "Original + Waze"
         ],
         [
           "daw_stock_xmas",
@@ -447,32 +303,12 @@
           "Fulgi + Waze"
         ],
         [
-          "daw_stock_mix",
-          "Brad si Fulg + Waze"
-        ],
-        [
-          "daw_stock_trees",
-          "4 Brazi + Waze"
-        ],
-        [
-          "daw_stock_flakes4",
-          "4 Fulgi + Waze"
-        ],
-        [
-          "daw_stock_xmas_only",
-          "Brad (fara harta)"
-        ],
-        [
           "daw_stock_bigtree",
-          "Brad mare in ceas"
-        ],
-        [
-          "daw_stock_bigtree_snow",
-          "Brad mare + fulgi"
+          "Brad mare"
         ],
         [
           "daw_stock_treepair",
-          "Doi brazi in ceas"
+          "Doi brazi"
         ],
         [
           "daw",
@@ -489,34 +325,6 @@
         [
           "daw_gold",
           "Craciun Auriu"
-        ],
-        [
-          "daw_blue",
-          "DAW Albastru"
-        ],
-        [
-          "daw_green",
-          "DAW Verde"
-        ],
-        [
-          "daw_violet",
-          "DAW Mov"
-        ],
-        [
-          "daw_amber",
-          "DAW Portocaliu"
-        ],
-        [
-          "daw_xtree",
-          "Craciun Brad"
-        ],
-        [
-          "daw_xlights",
-          "Craciun Luminite"
-        ],
-        [
-          "daw_silver",
-          "Craciun Argintiu"
         ]
       ]
     },
@@ -536,11 +344,11 @@
         ],
         [
           "daw_stock",
-          "DAW Original"
+          "Original"
         ],
         [
           "daw_stock_waze",
-          "DAW Original + Waze"
+          "Original + Waze"
         ],
         [
           "daw_stock_xmas",
@@ -551,32 +359,12 @@
           "Fulgi + Waze"
         ],
         [
-          "daw_stock_mix",
-          "Brad si Fulg + Waze"
-        ],
-        [
-          "daw_stock_trees",
-          "4 Brazi + Waze"
-        ],
-        [
-          "daw_stock_flakes4",
-          "4 Fulgi + Waze"
-        ],
-        [
-          "daw_stock_xmas_only",
-          "Brad (fara harta)"
-        ],
-        [
           "daw_stock_bigtree",
-          "Brad mare in ceas"
-        ],
-        [
-          "daw_stock_bigtree_snow",
-          "Brad mare + fulgi"
+          "Brad mare"
         ],
         [
           "daw_stock_treepair",
-          "Doi brazi in ceas"
+          "Doi brazi"
         ],
         [
           "daw",
@@ -593,34 +381,6 @@
         [
           "daw_gold",
           "Craciun Auriu"
-        ],
-        [
-          "daw_blue",
-          "DAW Albastru"
-        ],
-        [
-          "daw_green",
-          "DAW Verde"
-        ],
-        [
-          "daw_violet",
-          "DAW Mov"
-        ],
-        [
-          "daw_amber",
-          "DAW Portocaliu"
-        ],
-        [
-          "daw_xtree",
-          "Craciun Brad"
-        ],
-        [
-          "daw_xlights",
-          "Craciun Luminite"
-        ],
-        [
-          "daw_silver",
-          "Craciun Argintiu"
         ]
       ]
     },
@@ -640,11 +400,11 @@
         ],
         [
           "daw_stock",
-          "DAW Original"
+          "Original"
         ],
         [
           "daw_stock_waze",
-          "DAW Original + Waze"
+          "Original + Waze"
         ],
         [
           "daw_stock_xmas",
@@ -655,32 +415,12 @@
           "Fulgi + Waze"
         ],
         [
-          "daw_stock_mix",
-          "Brad si Fulg + Waze"
-        ],
-        [
-          "daw_stock_trees",
-          "4 Brazi + Waze"
-        ],
-        [
-          "daw_stock_flakes4",
-          "4 Fulgi + Waze"
-        ],
-        [
-          "daw_stock_xmas_only",
-          "Brad (fara harta)"
-        ],
-        [
           "daw_stock_bigtree",
-          "Brad mare in ceas"
-        ],
-        [
-          "daw_stock_bigtree_snow",
-          "Brad mare + fulgi"
+          "Brad mare"
         ],
         [
           "daw_stock_treepair",
-          "Doi brazi in ceas"
+          "Doi brazi"
         ],
         [
           "daw",
@@ -697,34 +437,6 @@
         [
           "daw_gold",
           "Craciun Auriu"
-        ],
-        [
-          "daw_blue",
-          "DAW Albastru"
-        ],
-        [
-          "daw_green",
-          "DAW Verde"
-        ],
-        [
-          "daw_violet",
-          "DAW Mov"
-        ],
-        [
-          "daw_amber",
-          "DAW Portocaliu"
-        ],
-        [
-          "daw_xtree",
-          "Craciun Brad"
-        ],
-        [
-          "daw_xlights",
-          "Craciun Luminite"
-        ],
-        [
-          "daw_silver",
-          "Craciun Argintiu"
         ]
       ]
     },
