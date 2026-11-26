@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -157,6 +157,18 @@
           "Brad (fara harta)"
         ],
         [
+          "daw_stock_bigtree",
+          "Brad mare in ceas"
+        ],
+        [
+          "daw_stock_bigtree_snow",
+          "Brad mare + fulgi"
+        ],
+        [
+          "daw_stock_treepair",
+          "Doi brazi in ceas"
+        ],
+        [
           "daw",
           "DAW Tuning"
         ],
@@ -251,6 +263,18 @@
           "Brad (fara harta)"
         ],
         [
+          "daw_stock_bigtree",
+          "Brad mare in ceas"
+        ],
+        [
+          "daw_stock_bigtree_snow",
+          "Brad mare + fulgi"
+        ],
+        [
+          "daw_stock_treepair",
+          "Doi brazi in ceas"
+        ],
+        [
           "daw",
           "DAW Tuning"
         ],
@@ -339,6 +363,18 @@
           "Brad (fara harta)"
         ],
         [
+          "daw_stock_bigtree",
+          "Brad mare in ceas"
+        ],
+        [
+          "daw_stock_bigtree_snow",
+          "Brad mare + fulgi"
+        ],
+        [
+          "daw_stock_treepair",
+          "Doi brazi in ceas"
+        ],
+        [
           "daw",
           "DAW Tuning"
         ],
@@ -425,6 +461,18 @@
         [
           "daw_stock_xmas_only",
           "Brad (fara harta)"
+        ],
+        [
+          "daw_stock_bigtree",
+          "Brad mare in ceas"
+        ],
+        [
+          "daw_stock_bigtree_snow",
+          "Brad mare + fulgi"
+        ],
+        [
+          "daw_stock_treepair",
+          "Doi brazi in ceas"
         ],
         [
           "daw",
@@ -519,6 +567,18 @@
           "Brad (fara harta)"
         ],
         [
+          "daw_stock_bigtree",
+          "Brad mare in ceas"
+        ],
+        [
+          "daw_stock_bigtree_snow",
+          "Brad mare + fulgi"
+        ],
+        [
+          "daw_stock_treepair",
+          "Doi brazi in ceas"
+        ],
+        [
           "daw",
           "DAW Tuning"
         ],
@@ -609,6 +669,18 @@
         [
           "daw_stock_xmas_only",
           "Brad (fara harta)"
+        ],
+        [
+          "daw_stock_bigtree",
+          "Brad mare in ceas"
+        ],
+        [
+          "daw_stock_bigtree_snow",
+          "Brad mare + fulgi"
+        ],
+        [
+          "daw_stock_treepair",
+          "Doi brazi in ceas"
         ],
         [
           "daw",
