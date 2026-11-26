@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -193,20 +193,52 @@
           "Doi brazi"
         ],
         [
-          "daw",
-          "DAW Tuning"
+          "daw_s",
+          "DAW Tuning · mica"
         ],
         [
-          "daw_red",
-          "Craciun Rosu"
+          "daw_m",
+          "DAW Tuning · mijlocie"
         ],
         [
-          "daw_ice",
-          "Craciun Gheata"
+          "daw_l",
+          "DAW Tuning · mare"
         ],
         [
-          "daw_gold",
-          "Craciun Auriu"
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_red_m",
+          "Craciun Rosu · mijlocie"
+        ],
+        [
+          "daw_red_l",
+          "Craciun Rosu · mare"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_ice_m",
+          "Craciun Gheata · mijlocie"
+        ],
+        [
+          "daw_ice_l",
+          "Craciun Gheata · mare"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
+        ],
+        [
+          "daw_gold_m",
+          "Craciun Auriu · mijlocie"
+        ],
+        [
+          "daw_gold_l",
+          "Craciun Auriu · mare"
         ]
       ]
     },
@@ -295,20 +327,52 @@
           "Doi brazi"
         ],
         [
-          "daw",
-          "DAW Tuning"
+          "daw_s",
+          "DAW Tuning · mica"
         ],
         [
-          "daw_red",
-          "Craciun Rosu"
+          "daw_m",
+          "DAW Tuning · mijlocie"
         ],
         [
-          "daw_ice",
-          "Craciun Gheata"
+          "daw_l",
+          "DAW Tuning · mare"
         ],
         [
-          "daw_gold",
-          "Craciun Auriu"
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_red_m",
+          "Craciun Rosu · mijlocie"
+        ],
+        [
+          "daw_red_l",
+          "Craciun Rosu · mare"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_ice_m",
+          "Craciun Gheata · mijlocie"
+        ],
+        [
+          "daw_ice_l",
+          "Craciun Gheata · mare"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
+        ],
+        [
+          "daw_gold_m",
+          "Craciun Auriu · mijlocie"
+        ],
+        [
+          "daw_gold_l",
+          "Craciun Auriu · mare"
         ]
       ]
     },
@@ -391,20 +455,52 @@
           "Doi brazi"
         ],
         [
-          "daw",
-          "DAW Tuning"
+          "daw_s",
+          "DAW Tuning · mica"
         ],
         [
-          "daw_red",
-          "Craciun Rosu"
+          "daw_m",
+          "DAW Tuning · mijlocie"
         ],
         [
-          "daw_ice",
-          "Craciun Gheata"
+          "daw_l",
+          "DAW Tuning · mare"
         ],
         [
-          "daw_gold",
-          "Craciun Auriu"
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_red_m",
+          "Craciun Rosu · mijlocie"
+        ],
+        [
+          "daw_red_l",
+          "Craciun Rosu · mare"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_ice_m",
+          "Craciun Gheata · mijlocie"
+        ],
+        [
+          "daw_ice_l",
+          "Craciun Gheata · mare"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
+        ],
+        [
+          "daw_gold_m",
+          "Craciun Auriu · mijlocie"
+        ],
+        [
+          "daw_gold_l",
+          "Craciun Auriu · mare"
         ]
       ]
     },
@@ -487,20 +583,52 @@
           "Doi brazi"
         ],
         [
-          "daw",
-          "DAW Tuning"
+          "daw_s",
+          "DAW Tuning · mica"
         ],
         [
-          "daw_red",
-          "Craciun Rosu"
+          "daw_m",
+          "DAW Tuning · mijlocie"
         ],
         [
-          "daw_ice",
-          "Craciun Gheata"
+          "daw_l",
+          "DAW Tuning · mare"
         ],
         [
-          "daw_gold",
-          "Craciun Auriu"
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_red_m",
+          "Craciun Rosu · mijlocie"
+        ],
+        [
+          "daw_red_l",
+          "Craciun Rosu · mare"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_ice_m",
+          "Craciun Gheata · mijlocie"
+        ],
+        [
+          "daw_ice_l",
+          "Craciun Gheata · mare"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
+        ],
+        [
+          "daw_gold_m",
+          "Craciun Auriu · mijlocie"
+        ],
+        [
+          "daw_gold_l",
+          "Craciun Auriu · mare"
         ]
       ]
     },
@@ -587,20 +715,52 @@
           "Doi brazi"
         ],
         [
-          "daw",
-          "DAW Tuning"
+          "daw_s",
+          "DAW Tuning · mica"
         ],
         [
-          "daw_red",
-          "Craciun Rosu"
+          "daw_m",
+          "DAW Tuning · mijlocie"
         ],
         [
-          "daw_ice",
-          "Craciun Gheata"
+          "daw_l",
+          "DAW Tuning · mare"
         ],
         [
-          "daw_gold",
-          "Craciun Auriu"
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_red_m",
+          "Craciun Rosu · mijlocie"
+        ],
+        [
+          "daw_red_l",
+          "Craciun Rosu · mare"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_ice_m",
+          "Craciun Gheata · mijlocie"
+        ],
+        [
+          "daw_ice_l",
+          "Craciun Gheata · mare"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
+        ],
+        [
+          "daw_gold_m",
+          "Craciun Auriu · mijlocie"
+        ],
+        [
+          "daw_gold_l",
+          "Craciun Auriu · mare"
         ]
       ]
     },
@@ -687,20 +847,52 @@
           "Doi brazi"
         ],
         [
-          "daw",
-          "DAW Tuning"
+          "daw_s",
+          "DAW Tuning · mica"
         ],
         [
-          "daw_red",
-          "Craciun Rosu"
+          "daw_m",
+          "DAW Tuning · mijlocie"
         ],
         [
-          "daw_ice",
-          "Craciun Gheata"
+          "daw_l",
+          "DAW Tuning · mare"
         ],
         [
-          "daw_gold",
-          "Craciun Auriu"
+          "daw_red_s",
+          "Craciun Rosu · mica"
+        ],
+        [
+          "daw_red_m",
+          "Craciun Rosu · mijlocie"
+        ],
+        [
+          "daw_red_l",
+          "Craciun Rosu · mare"
+        ],
+        [
+          "daw_ice_s",
+          "Craciun Gheata · mica"
+        ],
+        [
+          "daw_ice_m",
+          "Craciun Gheata · mijlocie"
+        ],
+        [
+          "daw_ice_l",
+          "Craciun Gheata · mare"
+        ],
+        [
+          "daw_gold_s",
+          "Craciun Auriu · mica"
+        ],
+        [
+          "daw_gold_m",
+          "Craciun Auriu · mijlocie"
+        ],
+        [
+          "daw_gold_l",
+          "Craciun Auriu · mare"
         ]
       ]
     },
