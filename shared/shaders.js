@@ -1605,7 +1605,7 @@ void main() {
         vec2 hs = u_hole.zw * 0.5;
         vec2 hq = abs(p - (u_hole.xy + hs)) - (hs - vec2(u_holeR));
         float hd = length(max(hq, 0.0)) + min(max(hq.x, hq.y), 0.0) - u_holeR;
-        if (u_holeCut > 0.0) { vec2 ee = abs(p - (u_hole.xy + hs)) - hs; hd = max(max(ee.x, ee.y), (ee.x + ee.y + u_holeCut) * 0.7071); }
+        if (u_holeCut > 0.0) { vec2 ee = abs(p - (u_hole.xy + hs)) - hs; hd = max(max(ee.x, ee.y), (ee.x + ee.y + u_holeCut) * 0.7071); hd = hd * 0.1; }
         alpha = clamp(hd + 0.5, 0.0, 1.0);
         // a thin grey frame round the window
         c = put(c, GREY, cov(abs(hd - 2.0) - 1.0) * 0.8);
@@ -1801,7 +1801,7 @@ void main() {
         vec2 hs = u_hole.zw * 0.5;
         vec2 hq = abs(p - (u_hole.xy + hs)) - (hs - vec2(u_holeR));
         float hd = length(max(hq, 0.0)) + min(max(hq.x, hq.y), 0.0) - u_holeR;
-        if (u_holeCut > 0.0) { vec2 ee = abs(p - (u_hole.xy + hs)) - hs; hd = max(max(ee.x, ee.y), (ee.x + ee.y + u_holeCut) * 0.7071); }
+        if (u_holeCut > 0.0) { vec2 ee = abs(p - (u_hole.xy + hs)) - hs; hd = max(max(ee.x, ee.y), (ee.x + ee.y + u_holeCut) * 0.7071); hd = hd * 0.1; }
         alpha = clamp(hd + 0.5, 0.0, 1.0);
         // a thin grey frame round the window
         c = put(c, GREY, cov(abs(hd - 2.0) - 1.0) * 0.8);
