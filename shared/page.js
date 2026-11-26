@@ -34,7 +34,7 @@ const C = {
 };
 const RAIL = { x: 16, y: 54, w: 252, h: 66, gap: 8 };
 const RAIL7 = { x: 16, y: 54, w: 252, h: 58, gap: 6 };     // seven tabs or more: a little shorter, so they fit
-const CX = 300, CR = 1584, CW = CR - CX;
+const CX = 40, CR = 1560, CW = CR - CX;
 const MODES = [['inComfort', 'Comfort'], ['inSport', 'Sport'], ['inEco', 'Eco Pro']];
 // a plug-in hybrid's own (Cluster Themes; shown once the car has sent a plug-in hybrid mode, or one is set)
 const PHEV_MODES = [['inHybrid', 'Hybrid'], ['inElectric', 'Electric']];
@@ -163,9 +163,10 @@ class Page {
         // the page under an open list takes no taps: the list (and a tap beside it to close) does
         const target = cv.target;
         if (this.picker || this.confirm) cv.target = function () { return this; };
+        const tabsH = 64;
         this.rail(cv, bottom);
         const body = { look: this.lookTab, readouts: this.readoutsTab, position: this.positionTab, map: this.mapTab, colours: this.coloursTab, badge: this.badgeTab, alerts: this.alertsTab, gmeter: this.gmeterTab, settings: this.settingsTab }[this.tab];
-        if (body) body.call(this, cv, bottom);
+        if (body) body.call(this, cv, bottom - tabsH - 8);
         this.demoButton(cv);
         cv.target = target;
         if (this.picker) this.drawPicker(cv, bottom);
@@ -199,18 +200,19 @@ class Page {
     }
 
     rail(cv, bottom) {
-        cv.fillRect(RAIL.x + RAIL.w + 15, 50, 1, bottom - 56, C.line);
-        const R = this.cfg.tabs.length > 6 ? RAIL7 : RAIL, dy = (66 - R.h) / 2;
+        const n = this.cfg.tabs.length, gap = 10, h = 54, y = bottom - h - 4;
+        const w = Math.min(300, (CR - CX - gap * (n - 1)) / n);
+        cv.fillRect(CX, y - 8, CR - CX, 1, C.line);
         this.cfg.tabs.forEach((id, i) => {
-            const x = R.x, y = R.y + i * (R.h + R.gap), w = R.w, h = R.h, sel = id === this.tab;
+            const x = CX + i * (w + gap), sel = id === this.tab;
             if (sel) {
                 cv.card(x, y, w, h, 12, [[0, A(C.blue, 0.30)], [1, A(C.blueDeep, 0.10)]]);
                 cv.strokeRoundRect(x, y, w, h, 12, 1, A(C.blueHi, 0.35));
-                cv.roundRect(x, y + 12, 4, h - 24, 2, C.blue);
+                cv.roundRect(x + 12, y + h - 5, w - 24, 3, 2, C.blue);
             }
-            icon(cv, (TAB[id] || {}).icon, x + 34, y + h / 2, sel ? C.text : C.dim);
-            cv.text(this.tabName(id), x + 64, y + 30 - dy, 21, sel ? '#ffffff' : C.text, { font: 'bold', literal: true });
-            cv.text(this.tabValue(id), x + 64, y + 53 - dy * 1.5, 15, sel ? A(C.blueHi, 0.95) : C.dim, { literal: true });
+            icon(cv, (TAB[id] || {}).icon, x + 30, y + h / 2, sel ? C.text : C.dim);
+            cv.text(this.tabName(id), x + 58, y + 24, 20, sel ? '#ffffff' : C.text, { font: 'bold', literal: true });
+            cv.text(this.tabValue(id), x + 58, y + 45, 14, sel ? A(C.blueHi, 0.95) : C.dim, { literal: true });
             cv.target(x, y, w, h, () => { this.tab = id; this.picker = null; this.kick(); }, 'tab:' + id, 12);
         });
     }
