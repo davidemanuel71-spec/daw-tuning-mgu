@@ -12,7 +12,7 @@
    "x": 150,
    "y": 80,
    "w": 1420,
-   "h": 540,
+   "h": 505,
    "color": [
     0,
     0,
@@ -23,12 +23,12 @@
     150,
     80,
     1420,
-    540
+    505
    ],
    "holeWhen": "mapUp",
    "holeRadius": 0,
    "holeInset": 0,
-   "holeCut": 151
+   "holeCut": 141
   },
   {
    "id": "daw_logo",
