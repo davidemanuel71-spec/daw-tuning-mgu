@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -161,6 +161,30 @@
           "Fulgi + Waze"
         ],
         [
+          "daw_stock_xmas_w3",
+          "Brad · Waze 3"
+        ],
+        [
+          "daw_stock_xmas_w4",
+          "Brad · Waze 4"
+        ],
+        [
+          "daw_stock_xmas_w5",
+          "Brad · Waze 5"
+        ],
+        [
+          "daw_stock_flake_w3",
+          "Fulgi · Waze 3"
+        ],
+        [
+          "daw_stock_flake_w4",
+          "Fulgi · Waze 4"
+        ],
+        [
+          "daw_stock_flake_w5",
+          "Fulgi · Waze 5"
+        ],
+        [
           "daw_stock_bigtree",
           "Brad mare"
         ],
@@ -239,6 +263,30 @@
           "Fulgi + Waze"
         ],
         [
+          "daw_stock_xmas_w3",
+          "Brad · Waze 3"
+        ],
+        [
+          "daw_stock_xmas_w4",
+          "Brad · Waze 4"
+        ],
+        [
+          "daw_stock_xmas_w5",
+          "Brad · Waze 5"
+        ],
+        [
+          "daw_stock_flake_w3",
+          "Fulgi · Waze 3"
+        ],
+        [
+          "daw_stock_flake_w4",
+          "Fulgi · Waze 4"
+        ],
+        [
+          "daw_stock_flake_w5",
+          "Fulgi · Waze 5"
+        ],
+        [
           "daw_stock_bigtree",
           "Brad mare"
         ],
@@ -311,6 +359,30 @@
           "Fulgi + Waze"
         ],
         [
+          "daw_stock_xmas_w3",
+          "Brad · Waze 3"
+        ],
+        [
+          "daw_stock_xmas_w4",
+          "Brad · Waze 4"
+        ],
+        [
+          "daw_stock_xmas_w5",
+          "Brad · Waze 5"
+        ],
+        [
+          "daw_stock_flake_w3",
+          "Fulgi · Waze 3"
+        ],
+        [
+          "daw_stock_flake_w4",
+          "Fulgi · Waze 4"
+        ],
+        [
+          "daw_stock_flake_w5",
+          "Fulgi · Waze 5"
+        ],
+        [
           "daw_stock_bigtree",
           "Brad mare"
         ],
@@ -381,6 +453,30 @@
         [
           "daw_stock_flake",
           "Fulgi + Waze"
+        ],
+        [
+          "daw_stock_xmas_w3",
+          "Brad · Waze 3"
+        ],
+        [
+          "daw_stock_xmas_w4",
+          "Brad · Waze 4"
+        ],
+        [
+          "daw_stock_xmas_w5",
+          "Brad · Waze 5"
+        ],
+        [
+          "daw_stock_flake_w3",
+          "Fulgi · Waze 3"
+        ],
+        [
+          "daw_stock_flake_w4",
+          "Fulgi · Waze 4"
+        ],
+        [
+          "daw_stock_flake_w5",
+          "Fulgi · Waze 5"
         ],
         [
           "daw_stock_bigtree",
@@ -459,6 +555,30 @@
           "Fulgi + Waze"
         ],
         [
+          "daw_stock_xmas_w3",
+          "Brad · Waze 3"
+        ],
+        [
+          "daw_stock_xmas_w4",
+          "Brad · Waze 4"
+        ],
+        [
+          "daw_stock_xmas_w5",
+          "Brad · Waze 5"
+        ],
+        [
+          "daw_stock_flake_w3",
+          "Fulgi · Waze 3"
+        ],
+        [
+          "daw_stock_flake_w4",
+          "Fulgi · Waze 4"
+        ],
+        [
+          "daw_stock_flake_w5",
+          "Fulgi · Waze 5"
+        ],
+        [
           "daw_stock_bigtree",
           "Brad mare"
         ],
@@ -533,6 +653,30 @@
         [
           "daw_stock_flake",
           "Fulgi + Waze"
+        ],
+        [
+          "daw_stock_xmas_w3",
+          "Brad · Waze 3"
+        ],
+        [
+          "daw_stock_xmas_w4",
+          "Brad · Waze 4"
+        ],
+        [
+          "daw_stock_xmas_w5",
+          "Brad · Waze 5"
+        ],
+        [
+          "daw_stock_flake_w3",
+          "Fulgi · Waze 3"
+        ],
+        [
+          "daw_stock_flake_w4",
+          "Fulgi · Waze 4"
+        ],
+        [
+          "daw_stock_flake_w5",
+          "Fulgi · Waze 5"
         ],
         [
           "daw_stock_bigtree",
