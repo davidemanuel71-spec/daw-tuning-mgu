@@ -206,8 +206,8 @@ class Page {
         this.cfg.tabs.forEach((id, i) => {
             const x = CX + i * (w + gap), sel = id === this.tab;
             if (sel) {
-                cv.card(x, y, w, h, 12, [[0, A(C.blue, 0.30)], [1, A(C.blueDeep, 0.10)]]);
-                cv.strokeRoundRect(x, y, w, h, 12, 1, A(C.blueHi, 0.35));
+                cv.card(x, y, w, h, 4, [[0, A(C.blue, 0.30)], [1, A(C.blueDeep, 0.10)]]);
+                cv.strokeRoundRect(x, y, w, h, 4, 1, A(C.blueHi, 0.35));
                 cv.roundRect(x + 12, y + h - 5, w - 24, 3, 2, C.blue);
             }
             icon(cv, (TAB[id] || {}).icon, x + 30, y + h / 2, sel ? C.text : C.dim);
@@ -759,16 +759,16 @@ function label(cv, x, y, s) { cv.text(s.toUpperCase(), x, y, 14, C.label, { font
 function note(cv, x, y, lines) { lines.forEach((s, i) => cv.text(s, x, y + i * 26, 17, C.dim, { literal: true })); }
 function glass(cv, x, y, w, h, sel) {
     if (sel) {
-        cv.card(x, y, w, h, 16, [[0, A(C.blue, 0.16)], [1, A(C.blueDeep, 0.05)]]);
-        cv.strokeRoundRect(x, y, w, h, 16, 2, C.blue);
+        cv.card(x, y, w, h, 4, [[0, A(C.blue, 0.16)], [1, A(C.blueDeep, 0.05)]]);
+        cv.strokeRoundRect(x, y, w, h, 4, 2, C.blue);
     } else {
-        cv.card(x, y, w, h, 16, [[0, '#ffffff0b'], [1, '#ffffff04']]);
-        cv.strokeRoundRect(x, y, w, h, 16, 1, C.line);
+        cv.card(x, y, w, h, 4, [[0, '#ffffff10'], [1, '#e5222b0a']]);
+        cv.strokeRoundRect(x, y, w, h, 4, 1, C.line);
     }
 }
 function chip(cv, x, y, text, on, run, key) {
     const w = cv.textWidth(text, 16, { font: 'bold', literal: true }) + 30, h = 36;
-    cv.roundRect(x, y, w, h, h / 2, on ? C.blue : '#ffffff12');
+    cv.roundRect(x, y, w, h, 4, on ? C.blue : '#ffffff12');
     cv.text(text, x + w / 2, y + 24, 16, on ? '#ffffff' : C.off, { align: 'center', font: 'bold', literal: true });
     cv.target(x, y, w, h, run, key, h / 2);
     return w;
@@ -776,7 +776,7 @@ function chip(cv, x, y, text, on, run, key) {
 /** A small chip (the HUD cards' drive modes). */
 function miniChip(cv, x, y, text, on, run, key) {
     const w = cv.textWidth(text, 13, { font: 'bold', literal: true }) + 18, h = 28;
-    cv.roundRect(x, y, w, h, h / 2, on ? C.blue : '#ffffff12');
+    cv.roundRect(x, y, w, h, 4, on ? C.blue : '#ffffff12');
     cv.text(text, x + w / 2, y + 19, 13, on ? '#ffffff' : C.off, { align: 'center', font: 'bold', literal: true });
     cv.target(x, y, w, h, run, key, h / 2);
     return w;
