@@ -28,7 +28,8 @@
    "holeWhen": "mapUp",
    "holeRadius": 0,
    "holeInset": 0,
-   "holeCut": 220
+   "holeCut": 220,
+   "fillWhen": "mapUp"
   },
   {
    "id": "daw_logo",

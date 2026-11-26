@@ -2491,7 +2491,9 @@ class HudApp {
             });
         } else if (w.type === 'fill') {
             c.uniform(ref, 'u_size', [w.w, w.h]);
-            c.uniform(ref, 'u_color', rgba(color(t, w.color || 'bg')));
+            const fc = rgba(color(t, w.color || 'bg'));
+            if (w.fillWhen && this.setting(w.fillWhen) !== true) fc[3] = 0;     // drawn only while that setting is on ("mapUp": the black corners of the map window)
+            c.uniform(ref, 'u_color', fc);
             c.uniform(ref, 'u_hole', this._hole(w));
             c.uniform(ref, 'u_holeR', [this._holeRadius(w)]);
             c.uniform(ref, 'u_holeCut', [isNum(w.holeCut) ? w.holeCut : 0]);
