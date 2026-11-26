@@ -2494,6 +2494,7 @@ class HudApp {
             c.uniform(ref, 'u_color', rgba(color(t, w.color || 'bg')));
             c.uniform(ref, 'u_hole', this._hole(w));
             c.uniform(ref, 'u_holeR', [this._holeRadius(w)]);
+            c.uniform(ref, 'u_holeCut', [isNum(w.holeCut) ? w.holeCut : 0]);
         } else if (w.type === 'box') {
             c.uniform(ref, 'u_size', [w.w, w.h]);
             c.uniform(ref, 'u_fill', rgba(color(t, w.fill || 'panel')));

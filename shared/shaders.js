@@ -289,6 +289,7 @@ uniform vec2 u_size;
 uniform vec4 u_color;
 uniform vec4 u_hole;
 uniform float u_holeR;
+uniform float u_holeCut;
 
 void main() {
     vec2 p = vec2(v_uv.x * u_size.x, v_uv.y * u_size.y);
@@ -297,6 +298,7 @@ void main() {
         vec2 hs = u_hole.zw * 0.5;
         vec2 q = abs(p - (u_hole.xy + hs)) - (hs - vec2(u_holeR));
         float d = length(max(q, 0.0)) + min(max(q.x, q.y), 0.0) - u_holeR;
+        if (u_holeCut > 0.0) { vec2 e = abs(p - (u_hole.xy + hs)) - hs; d = max(max(e.x, e.y), (e.x + e.y + u_holeCut) * 0.7071); }
         a *= clamp(d + 0.5, 0.0, 1.0);
     }
     gl_FragColor = vec4(u_color.rgb, a);

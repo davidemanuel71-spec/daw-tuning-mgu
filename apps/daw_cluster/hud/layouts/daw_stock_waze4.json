@@ -9,15 +9,15 @@
    "type": "fill",
    "class": "content",
    "z": 0,
-   "x": 0,
-   "y": 0,
-   "w": 1920,
-   "h": 660,
+   "x": 150,
+   "y": 80,
+   "w": 1420,
+   "h": 540,
    "color": [
     0,
     0,
     0,
-    0
+    255
    ],
    "hole": [
     150,
@@ -26,8 +26,9 @@
     540
    ],
    "holeWhen": "mapUp",
-   "holeRadius": 110,
-   "holeInset": 0
+   "holeRadius": 0,
+   "holeInset": 0,
+   "holeCut": 151
   },
   {
    "id": "daw_logo",
