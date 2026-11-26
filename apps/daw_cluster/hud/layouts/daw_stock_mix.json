@@ -20,13 +20,13 @@
     0
    ],
    "hole": [
-    525,
-    150,
-    890,
-    350
+    220,
+    95,
+    1280,
+    500
    ],
    "holeWhen": "mapUp",
-   "holeRadius": 30,
+   "holeRadius": 90,
    "holeInset": 0
   },
   {
