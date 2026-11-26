@@ -186,16 +186,23 @@
     34
    ],
    "hole": [
-    400,
-    120,
-    1006,
-    500
+    135,
+    95,
+    1650,
+    545
    ],
    "holeWhen": "mapUp",
    "holeInset": 0,
    "class": "content",
-   "holeRadius": 34,
-   "style": "daw"
+   "holeRadius": 272,
+   "style": "daw",
+   "clear": [
+    135,
+    95,
+    1650,
+    545
+   ],
+   "clearRadius": 272
   },
   {
    "id": "spd_us0",
@@ -640,9 +647,9 @@
    "id": "speed",
    "type": "text",
    "z": 5,
-   "x": 490,
-   "y": 556,
-   "w": 300,
+   "x": 300,
+   "y": 560,
+   "w": 280,
    "h": 68,
    "text": "{{speed}}",
    "font": "s_speed",
@@ -653,7 +660,7 @@
    "id": "speed_unit",
    "type": "text",
    "z": 5,
-   "x": 736,
+   "x": 590,
    "y": 594,
    "w": 100,
    "h": 29,
@@ -666,8 +673,8 @@
    "id": "gear",
    "type": "text",
    "z": 5,
-   "x": 1020,
-   "y": 556,
+   "x": 1180,
+   "y": 560,
    "w": 160,
    "h": 65,
    "text": "{{gearnum}}",
@@ -920,6 +927,30 @@
    "y": 134,
    "w": 110,
    "h": 110
+  },
+  {
+   "id": "deco_l",
+   "type": "tree",
+   "kind": "flake",
+   "class": "content",
+   "z": 6,
+   "x": 800,
+   "y": 144,
+   "w": 80,
+   "h": 80,
+   "stepMs": 900
+  },
+  {
+   "id": "deco_r",
+   "type": "tree",
+   "kind": "flake",
+   "class": "content",
+   "z": 6,
+   "x": 1040,
+   "y": 144,
+   "w": 80,
+   "h": 80,
+   "stepMs": 900
   }
  ]
 }

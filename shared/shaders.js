@@ -1643,7 +1643,9 @@ uniform vec4 u_hole;       // the map window x, y, w, h (w 0 = none)
 uniform float u_holeR;
 uniform vec4 u_panel;      // the dark panel's inner edge: its top point x, y and its point at the middle x, y
 uniform vec4 u_panelB;     // its bottom point x, y; z: how far inside the line the panel starts (0 = no panel)
-uniform float u_oval;      // > 0: the map window is an oval inside u_hole, feathered over this many px
+uniform float u_oval;
+uniform vec4 u_clear;      // the centre BMW's own cluster shows through, always: x, y, w, h (0 = none)
+uniform float u_clearR;    // its corner radius      // > 0: the map window is an oval inside u_hole, feathered over this many px
 
 uniform vec3 u_white;      // the scale numbers and lines (the theme's fg)
 uniform vec3 u_accent;     // needles, glow and rev-bar lead (the theme's arc)
@@ -1796,6 +1798,12 @@ void main() {
         // a thin grey frame round the window
         c = put(c, GREY, cov(abs(hd - 2.0) - 1.0) * 0.8);
         alpha = max(alpha, cov(abs(hd - 2.0) - 1.0) * 0.8);
+    }
+    if (u_clear.z > 0.0) {
+        vec2 cs = u_clear.zw * 0.5;
+        vec2 cq = abs(p - (u_clear.xy + cs)) - (cs - vec2(u_clearR));
+        float cd = length(max(cq, 0.0)) + min(max(cq.x, cq.y), 0.0) - u_clearR;
+        alpha = min(alpha, clamp(cd + 0.5, 0.0, 1.0));
     }
     gl_FragColor = vec4(c, alpha);
 }

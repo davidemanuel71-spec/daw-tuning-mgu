@@ -38,7 +38,7 @@ mgu.run({
         if (!hud) return;
         new Page(ctx, hud, {
             title: ctx.spec.title, what: 'cluster',
-            look: { name: 'Themes', style: 'hero', tags: { daw: 'DAW Tuning', daw_red: 'Craciun · rosu', daw_ice: 'Craciun · gheata', daw_gold: 'Craciun · auriu' } },
+            look: { name: 'Themes', style: 'hero', tags: { daw: 'DAW Tuning', daw_red: 'Craciun · rosu', daw_ice: 'Craciun · gheata', daw_gold: 'Craciun · auriu', daw_blue: 'albastru', daw_green: 'verde', daw_violet: 'mov', daw_amber: 'portocaliu', daw_stock: 'ceasul BMW + logo', daw_xtree: 'brad · beculete', daw_xlights: 'luminite colorate', daw_silver: 'fulgi', daw_stock_xmas: 'ceasul BMW + brad', daw_stock_flake: 'ceasul BMW + fulgi', daw_stock_waze: 'ceasul BMW + Waze', daw_stock_mix: 'brad + fulg', daw_stock_trees: '4 brazi', daw_stock_flakes4: '4 fulgi', daw_stock_xmas_only: 'brad fara harta' } },
             tabs: ['look', 'map', 'settings'],
             settings: ['units', 'tempUnits', 'pressureUnits', 'clock', 'timeZone', 'tankLitres', 'redline', 'shiftBefore', 'coldGuard', 'showBoost', 'nightDim', 'cameraNotch', 'keepStrip', 'autoStart', 'holiday', 'demo'],
             // the drive mode check's candidates this app's app.json listens to (issue #8; shared/hud.js modeDiagLines)

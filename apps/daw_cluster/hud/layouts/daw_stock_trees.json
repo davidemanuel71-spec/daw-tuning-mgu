@@ -1,0 +1,88 @@
+{
+ "schemaVersion": 2,
+ "name": "4 Brazi + Waze",
+ "theme": "dawred",
+ "_about": "BMW's own cluster (speed limit, drive modes, assist hands) stays untouched; map window sits between the scales.",
+ "widgets": [
+  {
+   "id": "wazewin",
+   "type": "fill",
+   "class": "content",
+   "z": 0,
+   "x": 0,
+   "y": 0,
+   "w": 1920,
+   "h": 660,
+   "color": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "hole": [
+    500,
+    150,
+    940,
+    390
+   ],
+   "holeWhen": "mapUp",
+   "holeRadius": 40,
+   "holeInset": 0
+  },
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  },
+  {
+   "id": "d1",
+   "type": "tree",
+   "kind": "tree",
+   "class": "content",
+   "z": 6,
+   "x": 690,
+   "y": 134,
+   "w": 70,
+   "h": 87
+  },
+  {
+   "id": "d2",
+   "type": "tree",
+   "kind": "tree",
+   "class": "content",
+   "z": 6,
+   "x": 790,
+   "y": 134,
+   "w": 70,
+   "h": 87
+  },
+  {
+   "id": "d3",
+   "type": "tree",
+   "kind": "tree",
+   "class": "content",
+   "z": 6,
+   "x": 1060,
+   "y": 134,
+   "w": 70,
+   "h": 87
+  },
+  {
+   "id": "d4",
+   "type": "tree",
+   "kind": "tree",
+   "class": "content",
+   "z": 6,
+   "x": 1160,
+   "y": 134,
+   "w": 70,
+   "h": 87
+  }
+ ]
+}

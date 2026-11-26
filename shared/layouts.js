@@ -46,6 +46,7 @@ const TYPES = {
     deco: [],
     nav: [],
     logo: [],
+    tree: [],
 };
 const CLASSES = ['ambient', 'content', 'overlay', 'alert'];
 

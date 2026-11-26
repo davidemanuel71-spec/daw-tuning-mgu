@@ -1,0 +1,92 @@
+{
+ "schemaVersion": 2,
+ "name": "4 Fulgi + Waze",
+ "theme": "dawred",
+ "_about": "BMW's own cluster (speed limit, drive modes, assist hands) stays untouched; map window sits between the scales.",
+ "widgets": [
+  {
+   "id": "wazewin",
+   "type": "fill",
+   "class": "content",
+   "z": 0,
+   "x": 0,
+   "y": 0,
+   "w": 1920,
+   "h": 660,
+   "color": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "hole": [
+    500,
+    150,
+    940,
+    390
+   ],
+   "holeWhen": "mapUp",
+   "holeRadius": 40,
+   "holeInset": 0
+  },
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  },
+  {
+   "id": "d1",
+   "type": "tree",
+   "kind": "flake",
+   "class": "content",
+   "z": 6,
+   "x": 690,
+   "y": 144,
+   "w": 70,
+   "h": 70,
+   "stepMs": 900
+  },
+  {
+   "id": "d2",
+   "type": "tree",
+   "kind": "flake",
+   "class": "content",
+   "z": 6,
+   "x": 790,
+   "y": 150,
+   "w": 60,
+   "h": 60,
+   "stepMs": 900
+  },
+  {
+   "id": "d3",
+   "type": "tree",
+   "kind": "flake",
+   "class": "content",
+   "z": 6,
+   "x": 1070,
+   "y": 150,
+   "w": 60,
+   "h": 60,
+   "stepMs": 900
+  },
+  {
+   "id": "d4",
+   "type": "tree",
+   "kind": "flake",
+   "class": "content",
+   "z": 6,
+   "x": 1160,
+   "y": 144,
+   "w": 70,
+   "h": 70,
+   "stepMs": 900
+  }
+ ]
+}

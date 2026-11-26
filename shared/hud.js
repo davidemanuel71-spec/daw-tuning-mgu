@@ -270,6 +270,7 @@ const sun = require('./sun');
 const textRaster = require('./hud_text');
 const { paintIcon } = require('./icons');
 const { paintLogo } = require('./logo');
+const Tree = require('./tree');
 const shaders = require('./shaders');
 const calibration = require('./calibration');
 const Car = require('./kit/car');
@@ -296,7 +297,7 @@ const CLAIM_MS = 1000;
 
 const BOOST_SCALE = { factor: 0.01, offset: 0, invalid: 255 }; // see header comment
 // the widget types drawn as pixels (image layers, packed into sheets unless "own": true); the rest are shaders
-const IMAGE_TYPES = { text: true, scale: true, stripe: true, badge: true, gridlabels: true, icon: true, swatchimg: true, nav: true, garland: true, logo: true };
+const IMAGE_TYPES = { text: true, scale: true, stripe: true, badge: true, gridlabels: true, icon: true, swatchimg: true, nav: true, garland: true, logo: true, tree: true };
 const STATUS_ASK_MS = 2000;      // after a rebuild: ask cluster-render for its own status text
 // an image layer is "stalled" until its first pixels reach cluster-render, which after a rebuild takes a second or two
 // through the upload budget: normal. Only one still stalled this long is logged as a problem (and its recovery)
@@ -2221,6 +2222,7 @@ class HudApp {
         else if (w.type === 'garland') { x.tw = new Garland.Twinkle(w); this._blit(x, null, Garland.paint(w, x.tw.lvl, null)); }
         else if (w.type === 'icon') this._blit(x, null, paintIcon(w.icon, w.w, w.h, color(t, w.color || 'fg')));
         else if (w.type === 'logo') this._blit(x, null, paintLogo(w));
+        else if (w.type === 'tree') { x.tr = new Tree.Cycle(w); this._blit(x, null, Tree.paint(w, 0)); }
         else if (w.type === 'sdash') {
             c.uniform(ref, 'u_size', [w.w, w.h]);
             c.uniform(ref, 'u_geo', w.geo);
@@ -2279,6 +2281,10 @@ class HudApp {
             c.uniform(ref, 'u_oval', [isNum(w.holeOval) ? w.holeOval : 0]);
             c.uniform(ref, 'u_white', rgb(color(t, 'fg')));
             c.uniform(ref, 'u_accent', rgb(color(t, 'arc')));
+            if (w.style === 'daw') {
+                c.uniform(ref, 'u_clear', w.clear ? [w.clear[0] - w.x, w.clear[1] - w.y, w.clear[2], w.clear[3]] : [0, 0, 0, 0]);
+                c.uniform(ref, 'u_clearR', [isNum(w.clearRadius) ? w.clearRadius : 120]);
+            }
         } else if (w.type === 'vdash') {
             // the bracket lines (target px): [x0, y0, x1, y1, width, brightness 0..1]
             const seg = [], segW = [];
@@ -2685,6 +2691,7 @@ class HudApp {
             x.c.uniform(x.ref, 'u_text', this._atlasCodes(x, s), { type: 'vec4' });
         } else if (w.type === 'nav') this._navUpdate(x, now, force);
         else if (w.type === 'garland') this._garlandTick(x, now);
+        else if (w.type === 'tree') { if (x.tr && x.tr.step(now)) this._blit(x, null, Tree.paint(w, x.tr.phase)); }
         else if (w.type === 'text') {
             if (!force && now - x.lastPaint < (w.rate || TEXT_MS)) return;
             let s = (w.navHide && this.navShown) || smartTemps.hidden(this, w) || !this._shownNow(w) ? '' : this._resolve(w.text);   // nav turn showing / "showWhen"

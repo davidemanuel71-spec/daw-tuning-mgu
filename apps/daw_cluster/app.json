@@ -1,8 +1,8 @@
 {
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
-  "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW Tuning look and three Christmas editions (red, ice, gold), with the Waze map large in the middle",
-  "version": "0.2.0",
+  "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
+  "version": "0.6.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -35,7 +35,8 @@
     "smart_temps.js",
     "hud_holiday.js",
     "garland.js",
-    "logo.js"
+    "logo.js",
+    "tree.js"
   ],
   "signals": {
     "de.bmw.infotainment.vehicle.CDS": {
@@ -117,11 +118,43 @@
       "key": "hudLayout",
       "label": "Theme (when not by drive mode)",
       "type": "choice",
-      "default": "daw",
+      "default": "daw_stock_waze",
       "options": [
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "daw_stock",
+          "DAW Original"
+        ],
+        [
+          "daw_stock_waze",
+          "DAW Original + Waze"
+        ],
+        [
+          "daw_stock_xmas",
+          "Brad + Waze"
+        ],
+        [
+          "daw_stock_flake",
+          "Fulgi + Waze"
+        ],
+        [
+          "daw_stock_mix",
+          "Brad si Fulg + Waze"
+        ],
+        [
+          "daw_stock_trees",
+          "4 Brazi + Waze"
+        ],
+        [
+          "daw_stock_flakes4",
+          "4 Fulgi + Waze"
+        ],
+        [
+          "daw_stock_xmas_only",
+          "Brad (fara harta)"
         ],
         [
           "daw",
@@ -138,6 +171,34 @@
         [
           "daw_gold",
           "Craciun Auriu"
+        ],
+        [
+          "daw_blue",
+          "DAW Albastru"
+        ],
+        [
+          "daw_green",
+          "DAW Verde"
+        ],
+        [
+          "daw_violet",
+          "DAW Mov"
+        ],
+        [
+          "daw_amber",
+          "DAW Portocaliu"
+        ],
+        [
+          "daw_xtree",
+          "Craciun Brad"
+        ],
+        [
+          "daw_xlights",
+          "Craciun Luminite"
+        ],
+        [
+          "daw_silver",
+          "Craciun Argintiu"
         ]
       ]
     },
@@ -158,6 +219,38 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_stock",
+          "DAW Original"
+        ],
+        [
+          "daw_stock_waze",
+          "DAW Original + Waze"
+        ],
+        [
+          "daw_stock_xmas",
+          "Brad + Waze"
+        ],
+        [
+          "daw_stock_flake",
+          "Fulgi + Waze"
+        ],
+        [
+          "daw_stock_mix",
+          "Brad si Fulg + Waze"
+        ],
+        [
+          "daw_stock_trees",
+          "4 Brazi + Waze"
+        ],
+        [
+          "daw_stock_flakes4",
+          "4 Fulgi + Waze"
+        ],
+        [
+          "daw_stock_xmas_only",
+          "Brad (fara harta)"
+        ],
+        [
           "daw",
           "DAW Tuning"
         ],
@@ -172,6 +265,34 @@
         [
           "daw_gold",
           "Craciun Auriu"
+        ],
+        [
+          "daw_blue",
+          "DAW Albastru"
+        ],
+        [
+          "daw_green",
+          "DAW Verde"
+        ],
+        [
+          "daw_violet",
+          "DAW Mov"
+        ],
+        [
+          "daw_amber",
+          "DAW Portocaliu"
+        ],
+        [
+          "daw_xtree",
+          "Craciun Brad"
+        ],
+        [
+          "daw_xlights",
+          "Craciun Luminite"
+        ],
+        [
+          "daw_silver",
+          "Craciun Argintiu"
         ]
       ]
     },
@@ -186,6 +307,38 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_stock",
+          "DAW Original"
+        ],
+        [
+          "daw_stock_waze",
+          "DAW Original + Waze"
+        ],
+        [
+          "daw_stock_xmas",
+          "Brad + Waze"
+        ],
+        [
+          "daw_stock_flake",
+          "Fulgi + Waze"
+        ],
+        [
+          "daw_stock_mix",
+          "Brad si Fulg + Waze"
+        ],
+        [
+          "daw_stock_trees",
+          "4 Brazi + Waze"
+        ],
+        [
+          "daw_stock_flakes4",
+          "4 Fulgi + Waze"
+        ],
+        [
+          "daw_stock_xmas_only",
+          "Brad (fara harta)"
+        ],
+        [
           "daw",
           "DAW Tuning"
         ],
@@ -200,6 +353,34 @@
         [
           "daw_gold",
           "Craciun Auriu"
+        ],
+        [
+          "daw_blue",
+          "DAW Albastru"
+        ],
+        [
+          "daw_green",
+          "DAW Verde"
+        ],
+        [
+          "daw_violet",
+          "DAW Mov"
+        ],
+        [
+          "daw_amber",
+          "DAW Portocaliu"
+        ],
+        [
+          "daw_xtree",
+          "Craciun Brad"
+        ],
+        [
+          "daw_xlights",
+          "Craciun Luminite"
+        ],
+        [
+          "daw_silver",
+          "Craciun Argintiu"
         ]
       ]
     },
@@ -214,6 +395,38 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_stock",
+          "DAW Original"
+        ],
+        [
+          "daw_stock_waze",
+          "DAW Original + Waze"
+        ],
+        [
+          "daw_stock_xmas",
+          "Brad + Waze"
+        ],
+        [
+          "daw_stock_flake",
+          "Fulgi + Waze"
+        ],
+        [
+          "daw_stock_mix",
+          "Brad si Fulg + Waze"
+        ],
+        [
+          "daw_stock_trees",
+          "4 Brazi + Waze"
+        ],
+        [
+          "daw_stock_flakes4",
+          "4 Fulgi + Waze"
+        ],
+        [
+          "daw_stock_xmas_only",
+          "Brad (fara harta)"
+        ],
+        [
           "daw",
           "DAW Tuning"
         ],
@@ -228,6 +441,34 @@
         [
           "daw_gold",
           "Craciun Auriu"
+        ],
+        [
+          "daw_blue",
+          "DAW Albastru"
+        ],
+        [
+          "daw_green",
+          "DAW Verde"
+        ],
+        [
+          "daw_violet",
+          "DAW Mov"
+        ],
+        [
+          "daw_amber",
+          "DAW Portocaliu"
+        ],
+        [
+          "daw_xtree",
+          "Craciun Brad"
+        ],
+        [
+          "daw_xlights",
+          "Craciun Luminite"
+        ],
+        [
+          "daw_silver",
+          "Craciun Argintiu"
         ]
       ]
     },
@@ -246,6 +487,38 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_stock",
+          "DAW Original"
+        ],
+        [
+          "daw_stock_waze",
+          "DAW Original + Waze"
+        ],
+        [
+          "daw_stock_xmas",
+          "Brad + Waze"
+        ],
+        [
+          "daw_stock_flake",
+          "Fulgi + Waze"
+        ],
+        [
+          "daw_stock_mix",
+          "Brad si Fulg + Waze"
+        ],
+        [
+          "daw_stock_trees",
+          "4 Brazi + Waze"
+        ],
+        [
+          "daw_stock_flakes4",
+          "4 Fulgi + Waze"
+        ],
+        [
+          "daw_stock_xmas_only",
+          "Brad (fara harta)"
+        ],
+        [
           "daw",
           "DAW Tuning"
         ],
@@ -260,6 +533,34 @@
         [
           "daw_gold",
           "Craciun Auriu"
+        ],
+        [
+          "daw_blue",
+          "DAW Albastru"
+        ],
+        [
+          "daw_green",
+          "DAW Verde"
+        ],
+        [
+          "daw_violet",
+          "DAW Mov"
+        ],
+        [
+          "daw_amber",
+          "DAW Portocaliu"
+        ],
+        [
+          "daw_xtree",
+          "Craciun Brad"
+        ],
+        [
+          "daw_xlights",
+          "Craciun Luminite"
+        ],
+        [
+          "daw_silver",
+          "Craciun Argintiu"
         ]
       ]
     },
@@ -278,6 +579,38 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_stock",
+          "DAW Original"
+        ],
+        [
+          "daw_stock_waze",
+          "DAW Original + Waze"
+        ],
+        [
+          "daw_stock_xmas",
+          "Brad + Waze"
+        ],
+        [
+          "daw_stock_flake",
+          "Fulgi + Waze"
+        ],
+        [
+          "daw_stock_mix",
+          "Brad si Fulg + Waze"
+        ],
+        [
+          "daw_stock_trees",
+          "4 Brazi + Waze"
+        ],
+        [
+          "daw_stock_flakes4",
+          "4 Fulgi + Waze"
+        ],
+        [
+          "daw_stock_xmas_only",
+          "Brad (fara harta)"
+        ],
+        [
           "daw",
           "DAW Tuning"
         ],
@@ -292,6 +625,34 @@
         [
           "daw_gold",
           "Craciun Auriu"
+        ],
+        [
+          "daw_blue",
+          "DAW Albastru"
+        ],
+        [
+          "daw_green",
+          "DAW Verde"
+        ],
+        [
+          "daw_violet",
+          "DAW Mov"
+        ],
+        [
+          "daw_amber",
+          "DAW Portocaliu"
+        ],
+        [
+          "daw_xtree",
+          "Craciun Brad"
+        ],
+        [
+          "daw_xlights",
+          "Craciun Luminite"
+        ],
+        [
+          "daw_silver",
+          "Craciun Argintiu"
         ]
       ]
     },

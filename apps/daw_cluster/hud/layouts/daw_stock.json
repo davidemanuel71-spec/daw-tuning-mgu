@@ -1,0 +1,19 @@
+{
+ "schemaVersion": 2,
+ "name": "DAW Original",
+ "theme": "dawred",
+ "_about": "BMW's own cluster (speed limit, drive modes, assist hands) stays untouched; map window sits between the scales.",
+ "widgets": [
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  }
+ ]
+}
