@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -133,6 +133,26 @@
           "Original + Waze"
         ],
         [
+          "daw_stock_waze1",
+          "Waze 1 · mic"
+        ],
+        [
+          "daw_stock_waze2",
+          "Waze 2 · mediu"
+        ],
+        [
+          "daw_stock_waze3",
+          "Waze 3 · mare"
+        ],
+        [
+          "daw_stock_waze4",
+          "Waze 4 · foarte mare"
+        ],
+        [
+          "daw_stock_waze5",
+          "Waze 5 · maxim"
+        ],
+        [
           "daw_stock_xmas",
           "Brad + Waze"
         ],
@@ -191,6 +211,26 @@
           "Original + Waze"
         ],
         [
+          "daw_stock_waze1",
+          "Waze 1 · mic"
+        ],
+        [
+          "daw_stock_waze2",
+          "Waze 2 · mediu"
+        ],
+        [
+          "daw_stock_waze3",
+          "Waze 3 · mare"
+        ],
+        [
+          "daw_stock_waze4",
+          "Waze 4 · foarte mare"
+        ],
+        [
+          "daw_stock_waze5",
+          "Waze 5 · maxim"
+        ],
+        [
           "daw_stock_xmas",
           "Brad + Waze"
         ],
@@ -243,6 +283,26 @@
           "Original + Waze"
         ],
         [
+          "daw_stock_waze1",
+          "Waze 1 · mic"
+        ],
+        [
+          "daw_stock_waze2",
+          "Waze 2 · mediu"
+        ],
+        [
+          "daw_stock_waze3",
+          "Waze 3 · mare"
+        ],
+        [
+          "daw_stock_waze4",
+          "Waze 4 · foarte mare"
+        ],
+        [
+          "daw_stock_waze5",
+          "Waze 5 · maxim"
+        ],
+        [
           "daw_stock_xmas",
           "Brad + Waze"
         ],
@@ -293,6 +353,26 @@
         [
           "daw_stock_waze",
           "Original + Waze"
+        ],
+        [
+          "daw_stock_waze1",
+          "Waze 1 · mic"
+        ],
+        [
+          "daw_stock_waze2",
+          "Waze 2 · mediu"
+        ],
+        [
+          "daw_stock_waze3",
+          "Waze 3 · mare"
+        ],
+        [
+          "daw_stock_waze4",
+          "Waze 4 · foarte mare"
+        ],
+        [
+          "daw_stock_waze5",
+          "Waze 5 · maxim"
         ],
         [
           "daw_stock_xmas",
@@ -351,6 +431,26 @@
           "Original + Waze"
         ],
         [
+          "daw_stock_waze1",
+          "Waze 1 · mic"
+        ],
+        [
+          "daw_stock_waze2",
+          "Waze 2 · mediu"
+        ],
+        [
+          "daw_stock_waze3",
+          "Waze 3 · mare"
+        ],
+        [
+          "daw_stock_waze4",
+          "Waze 4 · foarte mare"
+        ],
+        [
+          "daw_stock_waze5",
+          "Waze 5 · maxim"
+        ],
+        [
           "daw_stock_xmas",
           "Brad + Waze"
         ],
@@ -405,6 +505,26 @@
         [
           "daw_stock_waze",
           "Original + Waze"
+        ],
+        [
+          "daw_stock_waze1",
+          "Waze 1 · mic"
+        ],
+        [
+          "daw_stock_waze2",
+          "Waze 2 · mediu"
+        ],
+        [
+          "daw_stock_waze3",
+          "Waze 3 · mare"
+        ],
+        [
+          "daw_stock_waze4",
+          "Waze 4 · foarte mare"
+        ],
+        [
+          "daw_stock_waze5",
+          "Waze 5 · maxim"
         ],
         [
           "daw_stock_xmas",

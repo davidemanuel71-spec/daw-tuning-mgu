@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 2,
+ "name": "Waze 2 · mediu",
+ "theme": "dawred",
+ "_about": "BMW's own cluster (speed limit, drive modes, assist hands) stays untouched; map window sits between the scales.",
+ "widgets": [
+  {
+   "id": "wazewin",
+   "type": "fill",
+   "class": "content",
+   "z": 0,
+   "x": 0,
+   "y": 0,
+   "w": 1920,
+   "h": 660,
+   "color": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "hole": [
+    270,
+    105,
+    1180,
+    500
+   ],
+   "holeWhen": "mapUp",
+   "holeRadius": 70,
+   "holeInset": 0
+  },
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  }
+ ]
+}
