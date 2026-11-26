@@ -262,7 +262,6 @@ class Page {
             const ih = Math.min(gh - 34, (gw - 16) * 0.375), iw = ih / 0.375;
             this.picture(cv, v, 'small', x + (gw - iw) / 2, yy + 8, iw, ih);
             cv.text(this.layoutName(v), x + 12, yy + gh - 10, 16, '#ffffff', { font: 'bold', literal: true });
-            cv.text(this.tag(v), x + gw - 12, yy + gh - 10, 13, C.dim, { align: 'right', literal: true });
             cv.target(x, yy, gw, gh, () => this.chooseLayout(this.lookKey(), v), 'look:' + v, 16);
         });
     }
