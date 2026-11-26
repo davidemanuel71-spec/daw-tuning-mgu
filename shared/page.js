@@ -165,6 +165,10 @@ class Page {
         if (this.picker || this.confirm) cv.target = function () { return this; };
         const tabsH = 64;
         this.rail(cv, bottom);
+        cv.fillRect(CX, 46, 140, 3, C.blue);
+        cv.fillRect(CX + 150, 46, 40, 3, C.blueHi);
+        cv.text('DAW TUNING', CR, bottom - 20, 24, C.blue, { align: 'right', font: 'bold', spacing: 6, literal: true });
+        cv.text('CLUSTER · MGU', CR, bottom + 2, 12, C.label, { align: 'right', font: 'bold', spacing: 3, literal: true });
         const body = { look: this.lookTab, readouts: this.readoutsTab, position: this.positionTab, map: this.mapTab, colours: this.coloursTab, badge: this.badgeTab, alerts: this.alertsTab, gmeter: this.gmeterTab, settings: this.settingsTab }[this.tab];
         if (body) body.call(this, cv, bottom - tabsH - 8);
         this.demoButton(cv);
