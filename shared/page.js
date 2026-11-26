@@ -29,8 +29,8 @@ const tz = require('./tz');
 const W = 1600, H = 520;
 const A = G.withAlpha;
 const C = {
-    bg: '#05070a', glow: '#0d1a2e', text: '#eef2f8', dim: '#8a96a8', label: '#6f7b8f', line: '#ffffff12',
-    blue: '#2b7fff', blueHi: '#5aa2ff', blueDeep: '#1c69d4', live: '#7fd3a0', off: '#c3cad6',
+    bg: '#05070a', glow: '#2a0b0e', text: '#eef2f8', dim: '#8a96a8', label: '#6f7b8f', line: '#ffffff12',
+    blue: '#e5222b', blueHi: '#ff6a5f', blueDeep: '#a4141b', live: '#7fd3a0', off: '#c3cad6',
 };
 const RAIL = { x: 16, y: 54, w: 252, h: 66, gap: 8 };
 const RAIL7 = { x: 16, y: 54, w: 252, h: 58, gap: 6 };     // seven tabs or more: a little shorter, so they fit
@@ -52,7 +52,7 @@ const TAB = {
     settings: { name: 'Settings', icon: 'cog' },
 };
 
-// the kit's own chrome (header, bar, Settings sheet) in BMW blue, to match the page
+// the kit's own chrome (header, bar, Settings sheet) in DAW red, to match the page
 Object.assign(themes.THEMES.m_tricolour, { sel: C.blue, selText: '#ffffff', accent2: C.blueHi, bg: C.bg });
 
 class Page {
@@ -240,11 +240,11 @@ class Page {
     /** Cluster: the theme showing now, the drive modes beside it; every theme below in two rows. */
     lookHero(cv, bottom) {
         const shown = this.shownName();
-        label(cv, CX, 70, 'Now showing');
-        const pw = 523, ph = 196, px = CX, py = 82;
+        const pw = 523, ph = 196, px = CR - pw, py = 82;
+        label(cv, px, 70, 'DAW · acum pe ceas');
         this.picture(cv, shown, 'big', px, py, pw, ph);
         // right: name, tag line, the drive modes side by side
-        const rx = px + pw + 28, rw = CR - rx;
+        const rx = CX, rw = px - 28 - CX;
         cv.text(this.layoutName(shown), rx, py + 32, 34, '#ffffff', { font: 'bold', literal: true });
         cv.text(this.yieldNote() || this.tag(shown), rx, py + 58, 17, this.yieldNote() ? '#e0a340' : C.dim, { literal: true });
         const y = this.toggleRow(cv, rx, py + 72, rw, 'Change with the drive mode', 'byMode', 46);
