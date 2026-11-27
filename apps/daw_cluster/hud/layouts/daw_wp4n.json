@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 2,
+ "name": "Waze 4 fara negru",
+ "theme": "dawred",
+ "_about": "Waze plin 4 fara margini negre: fill transparent.",
+ "widgets": [
+  {
+   "id": "wazewin",
+   "type": "fill",
+   "class": "content",
+   "z": 0,
+   "x": 270,
+   "y": 125,
+   "w": 1380,
+   "h": 450,
+   "color": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "hole": [
+    270,
+    125,
+    1380,
+    450
+   ],
+   "holeWhen": "mapUp",
+   "fillWhen": "mapUp",
+   "holeInset": 0,
+   "holeRadius": 0
+  },
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  }
+ ]
+}
