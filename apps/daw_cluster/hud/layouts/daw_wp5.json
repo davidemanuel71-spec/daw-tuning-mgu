@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 2,
+ "name": "Waze plin 5",
+ "theme": "dawred",
+ "_about": "BMW cluster stays; the map fills the window (rounded), step 5 of 6, each a little smaller.",
+ "widgets": [
+  {
+   "id": "wazewin",
+   "type": "fill",
+   "class": "content",
+   "z": 0,
+   "x": 330,
+   "y": 130,
+   "w": 1260,
+   "h": 430,
+   "color": [
+    0,
+    0,
+    0,
+    255
+   ],
+   "hole": [
+    330,
+    130,
+    1260,
+    430
+   ],
+   "holeWhen": "mapUp",
+   "fillWhen": "mapUp",
+   "holeInset": 0,
+   "holeRadius": 193
+  },
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  }
+ ]
+}
