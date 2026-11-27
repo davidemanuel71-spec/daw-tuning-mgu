@@ -1,0 +1,7 @@
+{
+ "layer": "Gauge Scale",
+ "status": "PENDING_CALIBRATION",
+ "note": "Cifre si gradatii: pozitii masurate din poze, nu inventate. Format item: {text,x,y,size} sau {curve,t,text,offset}.",
+ "items": [],
+ "ticks": []
+}

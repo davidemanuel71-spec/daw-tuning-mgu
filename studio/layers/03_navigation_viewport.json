@@ -1,0 +1,12 @@
+{
+ "layer": "Navigation Viewport",
+ "rect": [
+  440,
+  150,
+  1040,
+  458
+ ],
+ "source": "waze-live (pe masina); in preview: placeholder",
+ "aspect_lock": true,
+ "note": "Waze produce 1088x480 (2.27:1). aspect_lock: fereastra pastreaza proportia ca sa nu deformeze harta."
+}

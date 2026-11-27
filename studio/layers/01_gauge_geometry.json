@@ -1,0 +1,76 @@
+{
+ "layer": "Gauge Geometry",
+ "status": "PENDING_CALIBRATION",
+ "note": "Fara curbe inventate. Curbele cadranelor BMW G06 se masoara din poza frontala + grila (vezi README, pasul 2). 'guide' = conturul din SVG-ul trimis de utilizator, NEVERIFICAT, doar ghid vizual in preview.",
+ "curves": [],
+ "guide": [
+  {
+   "name": "user_svg_left",
+   "unverified": true,
+   "path": [
+    [
+     "M",
+     710,
+     30
+    ],
+    [
+     "C",
+     360,
+     35,
+     100,
+     200,
+     100,
+     335
+    ],
+    [
+     "C",
+     100,
+     460,
+     240,
+     630,
+     360,
+     635
+    ],
+    [
+     "L",
+     780,
+     635
+    ]
+   ]
+  },
+  {
+   "name": "user_svg_right",
+   "unverified": true,
+   "path": [
+    [
+     "M",
+     1200,
+     30
+    ],
+    [
+     "C",
+     1550,
+     35,
+     1830,
+     200,
+     1830,
+     335
+    ],
+    [
+     "C",
+     1830,
+     460,
+     1690,
+     630,
+     1570,
+     635
+    ],
+    [
+     "L",
+     1200,
+     635
+    ]
+   ]
+  }
+ ]
+}

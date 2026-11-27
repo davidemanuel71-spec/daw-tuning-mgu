@@ -1,0 +1,12 @@
+{
+ "layer": "Adaptive Navigation Mask",
+ "type": "superellipse",
+ "n": 3.0,
+ "rect": [
+  440,
+  150,
+  1040,
+  458
+ ],
+ "note": "Dupa calibrare, masca se genereaza din curba interioara a cadranelor (offset)."
+}

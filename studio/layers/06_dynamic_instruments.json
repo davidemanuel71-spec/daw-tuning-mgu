@@ -1,0 +1,38 @@
+{
+ "layer": "Dynamic Instruments",
+ "note": "Pozitii din layout-ul existent daw_full_waze (target px).",
+ "items": [
+  {
+   "id": "speed",
+   "x": 640,
+   "y": 575,
+   "w": 300,
+   "h": 68,
+   "demo": "0"
+  },
+  {
+   "id": "speed_unit",
+   "x": 886,
+   "y": 613,
+   "w": 100,
+   "h": 29,
+   "demo": "km/h"
+  },
+  {
+   "id": "gear",
+   "x": 1040,
+   "y": 575,
+   "w": 130,
+   "h": 65,
+   "demo": "P"
+  },
+  {
+   "id": "rpm_unit",
+   "x": 1230,
+   "y": 600,
+   "w": 220,
+   "h": 29,
+   "demo": "1/min x1000"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "layer": "BMW Safety Layer",
+ "note": "Straturile noastre nu ating ce deseneaza BMW. Zonele de mai jos sunt DOAR marcate in preview (hasura); pe masina BMW le deseneaza sub straturile noastre.",
+ "zones": [
+  {
+   "name": "top telltale box (BMW)",
+   "rect": [
+    730,
+    0,
+    460,
+    128
+   ],
+   "source": "foto grila 01:48, +-15px"
+  },
+  {
+   "name": "speed limit sign (BMW)",
+   "circle": [
+    550,
+    620,
+    48
+   ],
+   "source": "foto grila 01:48, +-15px"
+  },
+  {
+   "name": "seat belt light",
+   "rect": [
+    587,
+    663,
+    40,
+    37
+   ],
+   "source": "cunoscut din kit"
+  }
+ ]
+}
