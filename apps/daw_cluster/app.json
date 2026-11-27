@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.16.2",
+  "version": "0.17.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -129,28 +129,16 @@
           "DAW FULL WAZE"
         ],
         [
-          "daw_r1",
-          "Rotund 1 · mic pastila"
+          "daw_o1",
+          "Oval 1 · proportii corecte"
         ],
         [
-          "daw_r2",
-          "Rotund 2 · mediu pastila"
-        ],
-        [
-          "daw_r3",
-          "Rotund 3 · mediu colturi mici"
+          "daw_o2",
+          "Oval 2 · lat, mai scund"
         ],
         [
           "daw_r4",
           "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r5",
-          "Rotund 5 · mare colturi mici"
-        ],
-        [
-          "daw_r6",
-          "Rotund 6 · maxim oval"
         ],
         [
           "daw_r7",
@@ -191,28 +179,16 @@
           "DAW FULL WAZE"
         ],
         [
-          "daw_r1",
-          "Rotund 1 · mic pastila"
+          "daw_o1",
+          "Oval 1 · proportii corecte"
         ],
         [
-          "daw_r2",
-          "Rotund 2 · mediu pastila"
-        ],
-        [
-          "daw_r3",
-          "Rotund 3 · mediu colturi mici"
+          "daw_o2",
+          "Oval 2 · lat, mai scund"
         ],
         [
           "daw_r4",
           "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r5",
-          "Rotund 5 · mare colturi mici"
-        ],
-        [
-          "daw_r6",
-          "Rotund 6 · maxim oval"
         ],
         [
           "daw_r7",
@@ -247,28 +223,16 @@
           "DAW FULL WAZE"
         ],
         [
-          "daw_r1",
-          "Rotund 1 · mic pastila"
+          "daw_o1",
+          "Oval 1 · proportii corecte"
         ],
         [
-          "daw_r2",
-          "Rotund 2 · mediu pastila"
-        ],
-        [
-          "daw_r3",
-          "Rotund 3 · mediu colturi mici"
+          "daw_o2",
+          "Oval 2 · lat, mai scund"
         ],
         [
           "daw_r4",
           "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r5",
-          "Rotund 5 · mare colturi mici"
-        ],
-        [
-          "daw_r6",
-          "Rotund 6 · maxim oval"
         ],
         [
           "daw_r7",
@@ -303,28 +267,16 @@
           "DAW FULL WAZE"
         ],
         [
-          "daw_r1",
-          "Rotund 1 · mic pastila"
+          "daw_o1",
+          "Oval 1 · proportii corecte"
         ],
         [
-          "daw_r2",
-          "Rotund 2 · mediu pastila"
-        ],
-        [
-          "daw_r3",
-          "Rotund 3 · mediu colturi mici"
+          "daw_o2",
+          "Oval 2 · lat, mai scund"
         ],
         [
           "daw_r4",
           "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r5",
-          "Rotund 5 · mare colturi mici"
-        ],
-        [
-          "daw_r6",
-          "Rotund 6 · maxim oval"
         ],
         [
           "daw_r7",
@@ -363,28 +315,16 @@
           "DAW FULL WAZE"
         ],
         [
-          "daw_r1",
-          "Rotund 1 · mic pastila"
+          "daw_o1",
+          "Oval 1 · proportii corecte"
         ],
         [
-          "daw_r2",
-          "Rotund 2 · mediu pastila"
-        ],
-        [
-          "daw_r3",
-          "Rotund 3 · mediu colturi mici"
+          "daw_o2",
+          "Oval 2 · lat, mai scund"
         ],
         [
           "daw_r4",
           "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r5",
-          "Rotund 5 · mare colturi mici"
-        ],
-        [
-          "daw_r6",
-          "Rotund 6 · maxim oval"
         ],
         [
           "daw_r7",
@@ -423,28 +363,16 @@
           "DAW FULL WAZE"
         ],
         [
-          "daw_r1",
-          "Rotund 1 · mic pastila"
+          "daw_o1",
+          "Oval 1 · proportii corecte"
         ],
         [
-          "daw_r2",
-          "Rotund 2 · mediu pastila"
-        ],
-        [
-          "daw_r3",
-          "Rotund 3 · mediu colturi mici"
+          "daw_o2",
+          "Oval 2 · lat, mai scund"
         ],
         [
           "daw_r4",
           "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r5",
-          "Rotund 5 · mare colturi mici"
-        ],
-        [
-          "daw_r6",
-          "Rotund 6 · maxim oval"
         ],
         [
           "daw_r7",
