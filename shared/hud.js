@@ -1002,7 +1002,9 @@ class HudApp {
         if (!this.waze) return;
         const on = !!(this.started && this.setting('mapInTheme') === true && this.mapLayout);
         this.waze.want(on);
-        this._mapHost(on && !this._camFree() ? this.mapRect : null);    // the camera's turn: the map area stays BMW's
+        this._mapHost(on ? this.mapRect : null);
+        // Turn View's camera in the same window while Waze isn't showing (turnview_watch.js slot)
+        if (this.turnview) this.turnview.slot(on && !!this.mapRect && this._camFree());
     }
 
     /** Turn View on and the Waze map not showing: the map window opens on the camera (BMW's central map area). */

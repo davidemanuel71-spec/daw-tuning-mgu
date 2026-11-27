@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.26.0 · camera Turn View mare
+- Camera din Turn View umple acum fereastra hartii din tema (pe Waze FULL SCREEN: tot ceasul), nu doar centrul mic BMW de 1088x480. DAW tine harta "hosted" in fereastra si ii spune lui Turn View (fisierul de slot pe care il citeste pentru IterioDev cluster design) cand e randul camerei: fara harta Waze camera, cu harta Waze Waze.
+- Nevoie de Turn View 0.11.0 sau mai nou.
+
 ## 0.25.0 · camera Turn View in temele cu harta
 - Cu **Turn View** (IterioDev, camera din fata) pornit: cat timp harta Waze nu se vede, fereastra hartii din tema (Waze FULL SCREEN, Albastru ca in poza, Craciun Rosu, hexagon) se deschide pe camera, in locul centrului BMW. Cand Waze arata harta, fereastra trece inapoi pe Waze; cand dispare harta, revine camera.
 - DAW doar intreaba Turn View (socketul lui, la 5 s) daca e pornit; nu-i schimba nimic. Fara Turn View instalat, nimic nu se schimba.
