@@ -2,7 +2,7 @@
  "schemaVersion": 2,
  "name": "Waze 1460x390",
  "theme": "dawred",
- "_about": "Specificatie utilizator: X230-1690, Y150-540, 1460x390, colturi rotunjite; cifrele BMW raman in afara hartii.",
+ "_about": "1460x390, colturi rotunjite raza 90 => petice negre foarte mici.",
  "widgets": [
   {
    "id": "wazewin",
@@ -28,7 +28,7 @@
    "holeWhen": "mapUp",
    "fillWhen": "mapUp",
    "holeInset": 0,
-   "holeRadius": 170
+   "holeRadius": 90
   },
   {
    "id": "daw_logo",
