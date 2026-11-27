@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 2,
+ "name": "Waze 1460x390",
+ "theme": "dawred",
+ "_about": "Specificatie utilizator: X230-1690, Y150-540, 1460x390, colturi rotunjite; cifrele BMW raman in afara hartii.",
+ "widgets": [
+  {
+   "id": "wazewin",
+   "type": "fill",
+   "class": "content",
+   "z": 0,
+   "x": 230,
+   "y": 150,
+   "w": 1460,
+   "h": 390,
+   "color": [
+    0,
+    0,
+    0,
+    255
+   ],
+   "hole": [
+    230,
+    150,
+    1460,
+    390
+   ],
+   "holeWhen": "mapUp",
+   "fillWhen": "mapUp",
+   "holeInset": 0,
+   "holeRadius": 170
+  },
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  }
+ ]
+}
