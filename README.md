@@ -4,6 +4,7 @@ Teme pentru ceasul (clusterul) BMW iDrive 7 (MGU), instalate prin MGU Store.
 
 - **DAW Tuning**: alb si rosu, cu logo-ul DAW sus la mijloc
 - **Craciun Rosu**, **Craciun Gheata**, **Craciun Auriu**
+- **Albastru ca in poza (iX3)** si **Harta nativa sigura (1088x480)**, dupa ideile din [dwz365365/id7f](https://github.com/dwz365365/id7f)
 - Harta Waze mare in mijloc (fereastra 1006x500, intre cadrane), prin `waze-on-cluster`
 - Viteza stanga, turatia dreapta, ca la M view
 

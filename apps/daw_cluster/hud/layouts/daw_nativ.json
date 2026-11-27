@@ -1,0 +1,19 @@
+{
+ "schemaVersion": 2,
+ "name": "Harta nativa sigura (1088x480)",
+ "theme": "dawblue",
+ "_about": "Modul sigur din id7f: tema nu deschide fereastra de harta, deci Waze on Cluster ramane in slotul nativ BMW de 1088x480 din centru, sub cadrane; toate informatiile BMW raman vizibile. Daca o tema DAW mutase harta pe panou, waze.js o trimite inapoi pe 'map' (start map), ca id7f 0.1.3.",
+ "widgets": [
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  }
+ ]
+}
