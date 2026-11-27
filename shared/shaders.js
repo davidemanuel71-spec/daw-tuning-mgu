@@ -1440,8 +1440,6 @@ uniform vec4 u_line;       // the line under the speed: from x, to x, y; the bot
 uniform vec4 u_hole;       // the map window x, y, w, h (w 0 = none)
 uniform float u_holeR;
 uniform float u_holeCut;
-uniform vec2 u_poly[41];
-uniform float u_np;
 uniform vec4 u_panel;      // the dark panel's inner edge: its top point x, y and its point at the middle x, y
 uniform vec4 u_panelB;     // its bottom point x, y; z: how far inside the line the panel starts (0 = no panel)
 uniform float u_oval;      // > 0: the map window is an oval inside u_hole, feathered over this many px
@@ -1608,17 +1606,6 @@ void main() {
         vec2 hq = abs(p - (u_hole.xy + hs)) - (hs - vec2(u_holeR));
         float hd = length(max(hq, 0.0)) + min(max(hq.x, hq.y), 0.0) - u_holeR;
         if (u_holeCut > 0.0) { vec2 ee = abs(p - (u_hole.xy + hs)) - hs; hd = max(max(ee.x, ee.y), (ee.x + ee.y + u_holeCut) * 0.7071); hd = hd * 0.1; }
-        if (u_np > 0.0) {
-            float pd = -10000.0;
-            for (int i = 0; i < 40; i++) {
-                if (float(i) >= u_np) break;
-                vec2 pa = u_poly[i]; vec2 pb = u_poly[i + 1];
-                vec2 pe = pb - pa;
-                vec2 pn = normalize(vec2(pe.y, -pe.x));
-                pd = max(pd, dot(p - pa, pn));
-            }
-            hd = pd * 0.1;
-        }
         alpha = clamp(hd + 0.5, 0.0, 1.0);
         // a thin grey frame round the window
         c = put(c, GREY, cov(abs(hd - 2.0) - 1.0) * 0.8);
@@ -1661,8 +1648,6 @@ uniform vec4 u_line;       // the line under the speed: from x, to x, y; the bot
 uniform vec4 u_hole;       // the map window x, y, w, h (w 0 = none)
 uniform float u_holeR;
 uniform float u_holeCut;
-uniform vec2 u_poly[41];
-uniform float u_np;
 uniform vec4 u_panel;      // the dark panel's inner edge: its top point x, y and its point at the middle x, y
 uniform vec4 u_panelB;     // its bottom point x, y; z: how far inside the line the panel starts (0 = no panel)
 uniform float u_oval;
@@ -1817,17 +1802,6 @@ void main() {
         vec2 hq = abs(p - (u_hole.xy + hs)) - (hs - vec2(u_holeR));
         float hd = length(max(hq, 0.0)) + min(max(hq.x, hq.y), 0.0) - u_holeR;
         if (u_holeCut > 0.0) { vec2 ee = abs(p - (u_hole.xy + hs)) - hs; hd = max(max(ee.x, ee.y), (ee.x + ee.y + u_holeCut) * 0.7071); hd = hd * 0.1; }
-        if (u_np > 0.0) {
-            float pd = -10000.0;
-            for (int i = 0; i < 40; i++) {
-                if (float(i) >= u_np) break;
-                vec2 pa = u_poly[i]; vec2 pb = u_poly[i + 1];
-                vec2 pe = pb - pa;
-                vec2 pn = normalize(vec2(pe.y, -pe.x));
-                pd = max(pd, dot(p - pa, pn));
-            }
-            hd = pd * 0.1;
-        }
         alpha = clamp(hd + 0.5, 0.0, 1.0);
         // a thin grey frame round the window
         c = put(c, GREY, cov(abs(hd - 2.0) - 1.0) * 0.8);
