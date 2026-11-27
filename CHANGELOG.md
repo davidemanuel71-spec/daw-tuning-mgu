@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.23.0 · optiunile Waze din id7f
+- In tab-ul Map (si in All settings): **Harta apare pe** (ceas, HUD, ambele, nicaieri), **Directii BMW** (ascunde/arata caseta BMW cat se vede harta), **HUD marime**, **HUD stanga/dreapta**, **HUD sus/jos**, **HUD peste pop-up**.
+- Aceleasi comenzi ca aplicatia lui dwz365365/id7f catre Waze on Cluster (ctl.sock pe loc, patch.sock ca sa ramana salvate). Cod scris de la zero in `shared/waze_opts.js`.
+- Toate pornesc pe **Lasa cum e**: dupa update nu se schimba nimic pana nu alegi ceva. O valoare aleasa se trimite o data si se tine minte; daca Waze e ocupat sau lipseste, reincearca la 5 s.
+
 ## 0.22.0 · idee din id7f
 - Tema noua **Albastru ca in poza (iX3)**: look-ul din macheta lui dwz365365/id7f (harta mare intre cadrane, rama albastra, scari viteza/turatie, bara de jos). Fereastra hartii e cea din Craciun Rosu: 1460x550, X 230-1690, Y 75-625.
 - Tema noua **Harta nativa sigura (1088x480)**: modul sigur din id7f 0.1.3. Tema nu deschide fereastra de harta, deci Waze on Cluster ramane in slotul nativ BMW de 1088x480, sub cadrane, cu toate informatiile BMW vizibile; daca harta fusese mutata pe panou, o trimite inapoi.

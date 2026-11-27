@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.22.0",
+  "version": "0.23.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -23,6 +23,7 @@
     "visible.js",
     "page.js",
     "waze.js",
+    "waze_opts.js",
     "previews.js",
     "sensors.js",
     "badges.js",
@@ -385,6 +386,209 @@
       "label": "Show Waze map inside the theme",
       "type": "bool",
       "default": true
+    },
+    {
+      "key": "wzShowOn",
+      "label": "Waze map shows on (id7f)",
+      "type": "choice",
+      "default": "keep",
+      "options": [
+        [
+          "keep",
+          "Lasa cum e"
+        ],
+        [
+          "cluster",
+          "Ceas (cluster)"
+        ],
+        [
+          "hud",
+          "HUD (parbriz)"
+        ],
+        [
+          "both",
+          "Ceas si HUD"
+        ],
+        [
+          "off",
+          "Nicaieri"
+        ]
+      ]
+    },
+    {
+      "key": "wzGuide",
+      "label": "BMW turn box while the map shows",
+      "type": "choice",
+      "default": "keep",
+      "options": [
+        [
+          "keep",
+          "Lasa cum e"
+        ],
+        [
+          "hide",
+          "Ascunde"
+        ],
+        [
+          "show",
+          "Arata"
+        ]
+      ]
+    },
+    {
+      "key": "wzHudSize",
+      "label": "HUD map size",
+      "type": "number",
+      "unit": "%",
+      "default": 9999,
+      "steps": [
+        9999,
+        0,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85
+      ],
+      "labels": {
+        "9999": "Lasa cum e",
+        "0": "Standard"
+      }
+    },
+    {
+      "key": "wzHudX",
+      "label": "HUD map left / right",
+      "type": "number",
+      "unit": "px",
+      "default": 9999,
+      "steps": [
+        -400,
+        -380,
+        -360,
+        -340,
+        -320,
+        -300,
+        -280,
+        -260,
+        -240,
+        -220,
+        -200,
+        -180,
+        -160,
+        -140,
+        -120,
+        -100,
+        -80,
+        -60,
+        -40,
+        -20,
+        9999,
+        0,
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140,
+        160,
+        180,
+        200,
+        220,
+        240,
+        260,
+        280,
+        300,
+        320,
+        340,
+        360,
+        380,
+        400
+      ],
+      "labels": {
+        "9999": "Lasa cum e"
+      }
+    },
+    {
+      "key": "wzHudY",
+      "label": "HUD map up / down",
+      "type": "number",
+      "unit": "px",
+      "default": 9999,
+      "steps": [
+        -400,
+        -380,
+        -360,
+        -340,
+        -320,
+        -300,
+        -280,
+        -260,
+        -240,
+        -220,
+        -200,
+        -180,
+        -160,
+        -140,
+        -120,
+        -100,
+        -80,
+        -60,
+        -40,
+        -20,
+        9999,
+        0,
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140,
+        160,
+        180,
+        200,
+        220,
+        240,
+        260,
+        280,
+        300,
+        320,
+        340,
+        360,
+        380,
+        400
+      ],
+      "labels": {
+        "9999": "Lasa cum e"
+      }
+    },
+    {
+      "key": "wzHudKeep",
+      "label": "HUD map over BMW pop-ups",
+      "type": "choice",
+      "default": "keep",
+      "options": [
+        [
+          "keep",
+          "Lasa cum e"
+        ],
+        [
+          "on",
+          "Da"
+        ],
+        [
+          "off",
+          "Nu"
+        ]
+      ]
     },
     {
       "key": "units",
@@ -1203,7 +1407,8 @@
     "waze": {
       "comment": "Show Waze map inside the theme (shared/waze.js): waze-on-cluster's status file (read every second) and its control socket (one short 'start' command, then closed). Paths from waze-on-cluster 0.9.3.",
       "status": "/run/waze-on-cluster/status.json",
-      "control": "/dev/shm/waze-on-cluster/ctl.sock"
+      "control": "/dev/shm/waze-on-cluster/ctl.sock",
+      "patch": "/dev/shm/waze-on-cluster/patch.sock"
     },
     "_comment": "target panel: the whole 1920x720 instrument cluster, drawn over BMW's gauges. socketPath: cluster-render's documented default. utcOffsetMinutes: as in HUD Widgets (the clock box). tankLitres: the fuel gauge's full mark (the car sends litres, not the tank size; a G01 X3 holds 65). engine: the peak crank torque (Nm) and power (kW) the {{torquePct}} and {{powerPct}} tokens count from (an M40i: 500 Nm, 285 kW / 382 hp).",
     "dme": {

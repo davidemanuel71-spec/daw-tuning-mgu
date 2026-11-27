@@ -275,6 +275,7 @@ const shaders = require('./shaders');
 const calibration = require('./calibration');
 const Car = require('./kit/car');
 const Waze = require('./waze');
+const WazeOpts = require('./waze_opts');
 const Screen = require('./screen');
 const badges = require('./badges');
 const Runs = require('./runs');
@@ -582,6 +583,8 @@ class HudApp {
         this.waze = this.config.waze ? new Waze(Object.assign({ dataDir: ctx.dataDir }, this.config.waze), this.log, () => this._guard('waze', () => {
             if (this.mapLayout && this.setting('mapUp') !== this.mapShown) { if (this.mapLive) this._mapLive(); else this._rebuild(); } else this._status();
         })) : null;
+        // Waze on Cluster's own options (where the map shows, BMW's turn box, the HUD map), as id7f sets them: waze_opts.js
+        this.wazeOpts = this.config.waze ? new WazeOpts(Object.assign({ dataDir: ctx.dataDir }, this.config.waze), this.log) : null;
         this.mapShown = false;           // "mapUp" when the layout was built (or last opened / closed, mapLive)
         this.mapLive = false;            // the active layout opens and closes its map window without a rebuild
         this.mapRect = null;             // where the active layout hosts the map (_mapHostRect), null: no window
@@ -606,7 +609,8 @@ class HudApp {
         ctx.settings.onChange((key) => {
             // a theme or layout picked anywhere (the page asks first, the kit's All settings list doesn't): no longer stepping aside
             if (['hudLayout', 'inComfort', 'inSport', 'inEco', 'inHybrid', 'inElectric', 'byMode'].indexOf(key) >= 0 && this.screen.yielded) this.screen.release();
-            if (PLACE_KEYS.indexOf(key) >= 0) this._guard('place', () => this._place());
+            if (typeof key === 'string' && key.indexOf('wz') === 0) { if (this.wazeOpts) this._guard('waze options', () => this.wazeOpts.apply((k) => this.setting(k))); this._status(); }
+            else if (PLACE_KEYS.indexOf(key) >= 0) this._guard('place', () => this._place());
             else if (LIVE_KEYS.indexOf(key) >= 0) this.widgets.forEach((x) => { x.last = null; });
             else if (key === 'autoStart') { /* read by main.js at the next start only */ }
             else if (key !== 'demo') this._rebuild(); else this._status();
@@ -981,6 +985,7 @@ class HudApp {
         this._status();
         this._startDme();
         if (this.waze) { this.waze.start(); this._wazeWant(); }
+        if (this.wazeOpts) this.wazeOpts.apply((k) => this.setting(k));
         this.screen.start();
     }
 
@@ -1104,6 +1109,7 @@ class HudApp {
         this.vstate.stop();
         this.stallTimers.forEach((t) => clearTimeout(t)); this.stallTimers.clear();
         if (this.waze) this._guard('waze stop', () => this.waze.stop());
+        if (this.wazeOpts) this.wazeOpts.stop();
         if (this.directions) this._guard('directions stop', () => this.directions.stop());
         this._guard('screen stop', () => this.screen.stop());
         this.clients.forEach((c) => c.close());
@@ -1346,7 +1352,8 @@ class HudApp {
 
     _status() {
         // the Waze map's state rides along while that setting is on (and redraws the page's Map tab when it changes)
-        const s = this.statusText() + (this.waze && this.setting('mapInTheme') === true ? '; Waze: ' + this.waze.info().text : '');
+        const wo = this.wazeOpts ? this.wazeOpts.info() : '';
+        const s = this.statusText() + (this.waze && this.setting('mapInTheme') === true ? '; Waze: ' + this.waze.info().text : '') + (wo ? '; ' + wo : '');
         const d = this.modeDiagLines().join('\n');
         if (s === this.lastStatus && d === this.lastDiag) return;
         this.lastStatus = s; this.lastDiag = d;

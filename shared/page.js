@@ -456,6 +456,18 @@ class Page {
             'Needs robertnisipeanu\'s Waze on Cluster 0.14.5 or newer with cluster-render 0.8.2 or newer.',
             'Turning this off gives Waze its usual place back.',
         ]);
+        // Waze on Cluster's own options, as dwz365365/id7f sets them (waze_opts.js); each starts at "keep"
+        if (this.item('wzShowOn')) {
+            const rx = CX + w + 24, rw = CW - w - 24;
+            label(cv, rx, 70, 'Waze on Cluster (ca in id7f)');
+            let ry = 84;
+            ry = this.pickRow(cv, rx, ry, rw, 'Harta apare pe', 'wzShowOn');
+            ry = this.pickRow(cv, rx, ry, rw, 'Directii BMW', 'wzGuide');
+            ry = this.stepRow(cv, rx, ry, rw, 'HUD marime', 'wzHudSize');
+            ry = this.stepRow(cv, rx, ry, rw, 'HUD stanga/dreapta', 'wzHudX');
+            ry = this.stepRow(cv, rx, ry, rw, 'HUD sus/jos', 'wzHudY');
+            this.pickRow(cv, rx, ry, rw, 'HUD peste pop-up', 'wzHudKeep');
+        }
     }
 
     /* ---------- Badge (cluster) ---------- */
