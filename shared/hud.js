@@ -276,6 +276,7 @@ const calibration = require('./calibration');
 const Car = require('./kit/car');
 const Waze = require('./waze');
 const WazeOpts = require('./waze_opts');
+const TurnViewWatch = require('./turnview_watch');
 const Screen = require('./screen');
 const badges = require('./badges');
 const Runs = require('./runs');
@@ -581,9 +582,15 @@ class HudApp {
         this.mapLayout = false;          // the active layout has a map window (a widget with holeWhen "mapUp")
         // the Waze map inside the theme (Cluster Themes, config.waze; waze.js): "mapUp" is on while it shows
         this.waze = this.config.waze ? new Waze(Object.assign({ dataDir: ctx.dataDir }, this.config.waze), this.log, () => this._guard('waze', () => {
+            if (this._camFree() !== this.camWas) return this._camRefresh();
             if (this.mapLayout && this.setting('mapUp') !== this.mapShown) { if (this.mapLive) this._mapLive(); else this._rebuild(); } else this._status();
         })) : null;
         // Waze on Cluster's own options (where the map shows, BMW's turn box, the HUD map), as id7f sets them: waze_opts.js
+        // IterioDev's Turn View (the front camera in the central map area): while it is on and the Waze map isn't showing,
+        // a theme's map window opens for the camera instead ("camFree", turnview_watch.js)
+        this.turnview = this.config.waze && this.config.turnview !== false
+            ? new TurnViewWatch(this.config.turnview || {}, this.log, () => this._guard('turn view', () => this._camRefresh())) : null;
+        this.camWas = false;
         this.wazeOpts = this.config.waze ? new WazeOpts(Object.assign({ dataDir: ctx.dataDir }, this.config.waze), this.log) : null;
         this.mapShown = false;           // "mapUp" when the layout was built (or last opened / closed, mapLive)
         this.mapLive = false;            // the active layout opens and closes its map window without a rebuild
@@ -734,7 +741,7 @@ class HudApp {
     /** A setting's value, or its default when the saved value isn't one the schema allows. */
     setting(key) {
         // "mapUp": not saved, the Waze map is showing inside the theme now (the setting on, waze.js says so)
-        if (key === 'mapUp') return !!(this.waze && this.waze.up && this.ctx.settings.get('mapInTheme') === true);
+        if (key === 'mapUp') return !!(this.waze && this.waze.up && this.ctx.settings.get('mapInTheme') === true) || this._camFree();
         // "ribScale": not saved, the Ribbon's scale numbers to show: thousands on the bar, "c" while the camera dip is on
         if (key === 'ribScale') return String(this._barMax() / 1000) + (this._cameraOn() ? 'c' : '');
         const s = this.ctx.settings.item(key);
@@ -980,12 +987,13 @@ class HudApp {
             this._status();
             if (this.client.ready) this.client.status();      // the scene ids (scenesApart) can change: guard, update
         }), 60000);
-        this.statusTimer = setInterval(() => this._guard('status', () => this._status()), 5000);
+        this.statusTimer = setInterval(() => this._guard('status', () => { if (this._camFree() !== this.camWas) this._camRefresh(); else this._status(); }), 5000);
         if (this.target === 'hud') this.claimTimer = setInterval(() => this._guard('hud claim', () => this._hudClaim()), CLAIM_MS);
         this._status();
         this._startDme();
         if (this.waze) { this.waze.start(); this._wazeWant(); }
         if (this.wazeOpts) this.wazeOpts.apply((k) => this.setting(k));
+        if (this.turnview) this.turnview.start();
         this.screen.start();
     }
 
@@ -994,7 +1002,25 @@ class HudApp {
         if (!this.waze) return;
         const on = !!(this.started && this.setting('mapInTheme') === true && this.mapLayout);
         this.waze.want(on);
-        this._mapHost(on ? this.mapRect : null);
+        this._mapHost(on && !this._camFree() ? this.mapRect : null);    // the camera's turn: the map area stays BMW's
+    }
+
+    /** Turn View on and the Waze map not showing: the map window opens on the camera (BMW's central map area). */
+    _camFree() {
+        if (!this.turnview || !this.turnview.on || !this.mapLayout) return false;
+        const s = this.waze && this.waze.st;
+        return !(s && (s.state === 'showing' || s.state === 'starting'));
+    }
+
+    /** _camFree() changed: the map host and the window follow. */
+    _camRefresh() {
+        const f = this._camFree();
+        if (f !== this.camWas) {
+            this.camWas = f;
+            this.log.info('turn view: ' + (f ? 'the map window shows the camera' : 'the map window back to Waze'));
+            this._wazeWant();
+        }
+        if (this.mapLayout && this.setting('mapUp') !== this.mapShown) { if (this.mapLive) this._mapLive(); else this._rebuild(); } else this._status();
     }
 
     /**
@@ -1110,6 +1136,7 @@ class HudApp {
         this.stallTimers.forEach((t) => clearTimeout(t)); this.stallTimers.clear();
         if (this.waze) this._guard('waze stop', () => this.waze.stop());
         if (this.wazeOpts) this.wazeOpts.stop();
+        if (this.turnview) this.turnview.stop();
         if (this.directions) this._guard('directions stop', () => this.directions.stop());
         this._guard('screen stop', () => this.screen.stop());
         this.clients.forEach((c) => c.close());
@@ -1352,7 +1379,7 @@ class HudApp {
 
     _status() {
         // the Waze map's state rides along while that setting is on (and redraws the page's Map tab when it changes)
-        const wo = this.wazeOpts ? this.wazeOpts.info() : '';
+        const wo = (this.wazeOpts ? this.wazeOpts.info() : '') + (this.camWas ? (this.wazeOpts && this.wazeOpts.info() ? '; ' : '') + 'Turn View: camera in the map window' : '');
         const s = this.statusText() + (this.waze && this.setting('mapInTheme') === true ? '; Waze: ' + this.waze.info().text : '') + (wo ? '; ' + wo : '');
         const d = this.modeDiagLines().join('\n');
         if (s === this.lastStatus && d === this.lastDiag) return;

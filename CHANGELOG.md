@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.25.0 · camera Turn View in temele cu harta
+- Cu **Turn View** (IterioDev, camera din fata) pornit: cat timp harta Waze nu se vede, fereastra hartii din tema (Waze FULL SCREEN, Albastru ca in poza, Craciun Rosu, hexagon) se deschide pe camera, in locul centrului BMW. Cand Waze arata harta, fereastra trece inapoi pe Waze; cand dispare harta, revine camera.
+- DAW doar intreaba Turn View (socketul lui, la 5 s) daca e pornit; nu-i schimba nimic. Fara Turn View instalat, nimic nu se schimba.
+
 ## 0.24.1
 - Waze FULL SCREEN: fara beculete de sarbatoare, fara caseta neagra sub viteza si fara treapta dubla (ramane doar viteza). Un layout cu "garland": false nu mai primeste beculetele.
 

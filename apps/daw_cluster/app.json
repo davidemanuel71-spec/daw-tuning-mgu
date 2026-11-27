@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.24.1",
+  "version": "0.25.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -24,6 +24,7 @@
     "page.js",
     "waze.js",
     "waze_opts.js",
+    "turnview_watch.js",
     "previews.js",
     "sensors.js",
     "badges.js",
@@ -1539,6 +1540,10 @@
     "engine": {
       "torqueNm": 500,
       "powerKw": 285
+    },
+    "turnview": {
+      "comment": "IterioDev Turn View (shared/turnview_watch.js): asked every 5 s on its control socket whether it is on; while it is and the Waze map isn't showing, the theme's map window opens on the camera.",
+      "control": "/run/iteriodev-turnview/ctl.sock"
     }
   }
 }
