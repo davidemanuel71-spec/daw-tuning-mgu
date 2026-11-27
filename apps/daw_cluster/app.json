@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.16.0",
+  "version": "0.16.1",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -153,6 +153,10 @@
           "Rotund 6 · maxim oval"
         ],
         [
+          "daw_r7",
+          "Rotund 7 · masca ta"
+        ],
+        [
           "daw_red",
           "Craciun Rosu"
         ],
@@ -207,6 +211,10 @@
           "Rotund 6 · maxim oval"
         ],
         [
+          "daw_r7",
+          "Rotund 7 · masca ta"
+        ],
+        [
           "daw_red",
           "Craciun Rosu"
         ],
@@ -255,6 +263,10 @@
           "Rotund 6 · maxim oval"
         ],
         [
+          "daw_r7",
+          "Rotund 7 · masca ta"
+        ],
+        [
           "daw_red",
           "Craciun Rosu"
         ],
@@ -301,6 +313,10 @@
         [
           "daw_r6",
           "Rotund 6 · maxim oval"
+        ],
+        [
+          "daw_r7",
+          "Rotund 7 · masca ta"
         ],
         [
           "daw_red",
@@ -355,6 +371,10 @@
           "Rotund 6 · maxim oval"
         ],
         [
+          "daw_r7",
+          "Rotund 7 · masca ta"
+        ],
+        [
           "daw_red",
           "Craciun Rosu"
         ],
@@ -405,6 +425,10 @@
         [
           "daw_r6",
           "Rotund 6 · maxim oval"
+        ],
+        [
+          "daw_r7",
+          "Rotund 7 · masca ta"
         ],
         [
           "daw_red",
