@@ -1,0 +1,93 @@
+{
+ "schemaVersion": 2,
+ "name": "Masurare (4 colturi)",
+ "theme": "dawred",
+ "_about": "Calibration: 4 coloured squares (red TL 60,40; green TR 1800,40; blue BL 60,620; yellow BR 1800,620; 60x60 px) + 50 px grid. Photograph straight on, then studio/rectify.py.",
+ "widgets": [
+  {
+   "id": "grid",
+   "type": "grid",
+   "x": 0,
+   "y": 0,
+   "w": 1920,
+   "h": 720,
+   "step": 50,
+   "major": 2
+  },
+  {
+   "id": "grid_labels",
+   "type": "gridlabels",
+   "z": 5,
+   "x": 0,
+   "y": 0,
+   "w": 1920,
+   "h": 720,
+   "step": 100,
+   "font": "head"
+  },
+  {
+   "id": "m_tl",
+   "type": "fill",
+   "class": "content",
+   "z": 8,
+   "x": 60,
+   "y": 40,
+   "w": 60,
+   "h": 60,
+   "color": [
+    255,
+    0,
+    0,
+    255
+   ]
+  },
+  {
+   "id": "m_tr",
+   "type": "fill",
+   "class": "content",
+   "z": 8,
+   "x": 1800,
+   "y": 40,
+   "w": 60,
+   "h": 60,
+   "color": [
+    0,
+    255,
+    0,
+    255
+   ]
+  },
+  {
+   "id": "m_bl",
+   "type": "fill",
+   "class": "content",
+   "z": 8,
+   "x": 60,
+   "y": 620,
+   "w": 60,
+   "h": 60,
+   "color": [
+    0,
+    80,
+    255,
+    255
+   ]
+  },
+  {
+   "id": "m_br",
+   "type": "fill",
+   "class": "content",
+   "z": 8,
+   "x": 1800,
+   "y": 620,
+   "w": 60,
+   "h": 60,
+   "color": [
+    255,
+    255,
+    0,
+    255
+   ]
+  }
+ ]
+}

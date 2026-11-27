@@ -17,3 +17,9 @@ Layout 1920×720 construit in straturi, randat offline (doar PNG, nu atinge masi
 
 Nicio pozitie de cifra nu e inventata: straturile 01 si 02 raman goale pana la calibrare.
 Conturul 'guide' din 01 e SVG-ul primit de la utilizator si e marcat neverificat.
+
+## Calibrare (masurare exacta)
+1. In meniu: tema **Masurare (4 colturi)** (patrate rosu/verde/albastru/galben la colturi + grila 50 px).
+2. Telefonul fixat, frontal, nemiscat. Poza 1: tema Masurare. Poza 2 (aceeasi pozitie): tema Original.
+3. `python3 studio/rectify.py poza_masurare.jpg` salveaza matricea (studio/calib_H.json) si scrie `out/rectified_ruler.png`.
+4. `python3 studio/rectify.py poza_original.jpg --use-h` corecteaza poza 2 cu aceeasi matrice: cifrele BMW se citesc in pixeli de panou.
