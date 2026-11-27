@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.20.6",
+  "version": "0.21.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -126,63 +126,11 @@
         ],
         [
           "daw_stock",
-          "Original (cu camera)"
+          "Original (cu beculete + logo DAW)"
         ],
         [
-          "daw_oem",
-          "Waze ca originalul (masurat)"
-        ],
-        [
-          "daw_map",
-          "Waze 1460x390 (tema ta)"
-        ],
-        [
-          "daw_rect",
-          "Waze dreptunghi 1460x390 (fara negru)"
-        ],
-        [
-          "daw_wp1",
-          "Waze plin 1"
-        ],
-        [
-          "daw_wp2",
-          "Waze plin 2"
-        ],
-        [
-          "daw_wp3",
-          "Waze plin 3"
-        ],
-        [
-          "daw_wp4",
-          "Waze plin 4"
-        ],
-        [
-          "daw_wp4n",
-          "Waze 4 fara negru"
-        ],
-        [
-          "daw_wp5",
-          "Waze plin 5"
-        ],
-        [
-          "daw_wp6",
-          "Waze plin 6"
-        ],
-        [
-          "daw_wp2c",
-          "Waze plin 2 · colturi mici"
-        ],
-        [
-          "daw_wp3c",
-          "Waze plin 3 · colturi mici"
-        ],
-        [
-          "daw_wp4c",
-          "Waze plin 4 · colturi mici"
-        ],
-        [
-          "cal_fix",
-          "Masurare (4 colturi)"
+          "daw_o_fulgi",
+          "Original + fulgi"
         ]
       ]
     },
@@ -196,7 +144,7 @@
       "key": "inComfort",
       "label": "In Comfort",
       "type": "choice",
-      "default": "daw",
+      "default": "daw_stock",
       "options": [
         [
           "off",
@@ -204,63 +152,11 @@
         ],
         [
           "daw_stock",
-          "Original (cu camera)"
+          "Original (cu beculete + logo DAW)"
         ],
         [
-          "daw_oem",
-          "Waze ca originalul (masurat)"
-        ],
-        [
-          "daw_map",
-          "Waze 1460x390 (tema ta)"
-        ],
-        [
-          "daw_rect",
-          "Waze dreptunghi 1460x390 (fara negru)"
-        ],
-        [
-          "daw_wp1",
-          "Waze plin 1"
-        ],
-        [
-          "daw_wp2",
-          "Waze plin 2"
-        ],
-        [
-          "daw_wp3",
-          "Waze plin 3"
-        ],
-        [
-          "daw_wp4",
-          "Waze plin 4"
-        ],
-        [
-          "daw_wp4n",
-          "Waze 4 fara negru"
-        ],
-        [
-          "daw_wp5",
-          "Waze plin 5"
-        ],
-        [
-          "daw_wp6",
-          "Waze plin 6"
-        ],
-        [
-          "daw_wp2c",
-          "Waze plin 2 · colturi mici"
-        ],
-        [
-          "daw_wp3c",
-          "Waze plin 3 · colturi mici"
-        ],
-        [
-          "daw_wp4c",
-          "Waze plin 4 · colturi mici"
-        ],
-        [
-          "cal_fix",
-          "Masurare (4 colturi)"
+          "daw_o_fulgi",
+          "Original + fulgi"
         ]
       ]
     },
@@ -268,7 +164,7 @@
       "key": "inSport",
       "label": "In Sport",
       "type": "choice",
-      "default": "daw",
+      "default": "daw_stock",
       "options": [
         [
           "off",
@@ -276,63 +172,11 @@
         ],
         [
           "daw_stock",
-          "Original (cu camera)"
+          "Original (cu beculete + logo DAW)"
         ],
         [
-          "daw_oem",
-          "Waze ca originalul (masurat)"
-        ],
-        [
-          "daw_map",
-          "Waze 1460x390 (tema ta)"
-        ],
-        [
-          "daw_rect",
-          "Waze dreptunghi 1460x390 (fara negru)"
-        ],
-        [
-          "daw_wp1",
-          "Waze plin 1"
-        ],
-        [
-          "daw_wp2",
-          "Waze plin 2"
-        ],
-        [
-          "daw_wp3",
-          "Waze plin 3"
-        ],
-        [
-          "daw_wp4",
-          "Waze plin 4"
-        ],
-        [
-          "daw_wp4n",
-          "Waze 4 fara negru"
-        ],
-        [
-          "daw_wp5",
-          "Waze plin 5"
-        ],
-        [
-          "daw_wp6",
-          "Waze plin 6"
-        ],
-        [
-          "daw_wp2c",
-          "Waze plin 2 · colturi mici"
-        ],
-        [
-          "daw_wp3c",
-          "Waze plin 3 · colturi mici"
-        ],
-        [
-          "daw_wp4c",
-          "Waze plin 4 · colturi mici"
-        ],
-        [
-          "cal_fix",
-          "Masurare (4 colturi)"
+          "daw_o_fulgi",
+          "Original + fulgi"
         ]
       ]
     },
@@ -340,7 +184,7 @@
       "key": "inEco",
       "label": "In Eco Pro",
       "type": "choice",
-      "default": "daw",
+      "default": "daw_stock",
       "options": [
         [
           "off",
@@ -348,63 +192,11 @@
         ],
         [
           "daw_stock",
-          "Original (cu camera)"
+          "Original (cu beculete + logo DAW)"
         ],
         [
-          "daw_oem",
-          "Waze ca originalul (masurat)"
-        ],
-        [
-          "daw_map",
-          "Waze 1460x390 (tema ta)"
-        ],
-        [
-          "daw_rect",
-          "Waze dreptunghi 1460x390 (fara negru)"
-        ],
-        [
-          "daw_wp1",
-          "Waze plin 1"
-        ],
-        [
-          "daw_wp2",
-          "Waze plin 2"
-        ],
-        [
-          "daw_wp3",
-          "Waze plin 3"
-        ],
-        [
-          "daw_wp4",
-          "Waze plin 4"
-        ],
-        [
-          "daw_wp4n",
-          "Waze 4 fara negru"
-        ],
-        [
-          "daw_wp5",
-          "Waze plin 5"
-        ],
-        [
-          "daw_wp6",
-          "Waze plin 6"
-        ],
-        [
-          "daw_wp2c",
-          "Waze plin 2 · colturi mici"
-        ],
-        [
-          "daw_wp3c",
-          "Waze plin 3 · colturi mici"
-        ],
-        [
-          "daw_wp4c",
-          "Waze plin 4 · colturi mici"
-        ],
-        [
-          "cal_fix",
-          "Masurare (4 colturi)"
+          "daw_o_fulgi",
+          "Original + fulgi"
         ]
       ]
     },
@@ -424,63 +216,11 @@
         ],
         [
           "daw_stock",
-          "Original (cu camera)"
+          "Original (cu beculete + logo DAW)"
         ],
         [
-          "daw_oem",
-          "Waze ca originalul (masurat)"
-        ],
-        [
-          "daw_map",
-          "Waze 1460x390 (tema ta)"
-        ],
-        [
-          "daw_rect",
-          "Waze dreptunghi 1460x390 (fara negru)"
-        ],
-        [
-          "daw_wp1",
-          "Waze plin 1"
-        ],
-        [
-          "daw_wp2",
-          "Waze plin 2"
-        ],
-        [
-          "daw_wp3",
-          "Waze plin 3"
-        ],
-        [
-          "daw_wp4",
-          "Waze plin 4"
-        ],
-        [
-          "daw_wp4n",
-          "Waze 4 fara negru"
-        ],
-        [
-          "daw_wp5",
-          "Waze plin 5"
-        ],
-        [
-          "daw_wp6",
-          "Waze plin 6"
-        ],
-        [
-          "daw_wp2c",
-          "Waze plin 2 · colturi mici"
-        ],
-        [
-          "daw_wp3c",
-          "Waze plin 3 · colturi mici"
-        ],
-        [
-          "daw_wp4c",
-          "Waze plin 4 · colturi mici"
-        ],
-        [
-          "cal_fix",
-          "Masurare (4 colturi)"
+          "daw_o_fulgi",
+          "Original + fulgi"
         ]
       ]
     },
@@ -500,63 +240,11 @@
         ],
         [
           "daw_stock",
-          "Original (cu camera)"
+          "Original (cu beculete + logo DAW)"
         ],
         [
-          "daw_oem",
-          "Waze ca originalul (masurat)"
-        ],
-        [
-          "daw_map",
-          "Waze 1460x390 (tema ta)"
-        ],
-        [
-          "daw_rect",
-          "Waze dreptunghi 1460x390 (fara negru)"
-        ],
-        [
-          "daw_wp1",
-          "Waze plin 1"
-        ],
-        [
-          "daw_wp2",
-          "Waze plin 2"
-        ],
-        [
-          "daw_wp3",
-          "Waze plin 3"
-        ],
-        [
-          "daw_wp4",
-          "Waze plin 4"
-        ],
-        [
-          "daw_wp4n",
-          "Waze 4 fara negru"
-        ],
-        [
-          "daw_wp5",
-          "Waze plin 5"
-        ],
-        [
-          "daw_wp6",
-          "Waze plin 6"
-        ],
-        [
-          "daw_wp2c",
-          "Waze plin 2 · colturi mici"
-        ],
-        [
-          "daw_wp3c",
-          "Waze plin 3 · colturi mici"
-        ],
-        [
-          "daw_wp4c",
-          "Waze plin 4 · colturi mici"
-        ],
-        [
-          "cal_fix",
-          "Masurare (4 colturi)"
+          "daw_o_fulgi",
+          "Original + fulgi"
         ]
       ]
     },
