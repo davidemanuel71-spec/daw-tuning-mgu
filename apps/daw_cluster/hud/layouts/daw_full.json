@@ -1,0 +1,93 @@
+{
+ "schemaVersion": 2,
+ "name": "Waze FULL SCREEN",
+ "theme": "dawblue",
+ "_about": "Harta CarPlay/Waze pe tot ceasul 1920x720, ca prototipul full screen din dwz365365/id7f (target panel, map_rect 0,0,1920,720). Fara harta: ceasul BMW original. Cu harta: viteza si treapta noastre peste harta, jos la mijloc. Martorii si cutia de viteze BMW se vad peste.",
+ "widgets": [
+  {
+   "id": "wazefull",
+   "type": "fill",
+   "class": "content",
+   "z": 0,
+   "x": 0,
+   "y": 0,
+   "w": 1920,
+   "h": 720,
+   "color": [
+    0,
+    0,
+    0,
+    255
+   ],
+   "hole": [
+    0,
+    0,
+    1920,
+    720
+   ],
+   "holeWhen": "mapUp",
+   "fillWhen": "mapUp",
+   "holeInset": 0,
+   "holeRadius": 0
+  },
+  {
+   "id": "spd_bg",
+   "type": "fill",
+   "class": "content",
+   "z": 3,
+   "x": 760,
+   "y": 570,
+   "w": 400,
+   "h": 90,
+   "color": [
+    0,
+    0,
+    0,
+    170
+   ],
+   "toggle": "mapUp"
+  },
+  {
+   "id": "speed",
+   "type": "text",
+   "z": 5,
+   "x": 770,
+   "y": 580,
+   "w": 220,
+   "h": 68,
+   "text": "{{speed}}",
+   "font": "s_speed",
+   "color": "fg",
+   "align": "right",
+   "toggle": "mapUp"
+  },
+  {
+   "id": "speed_unit",
+   "type": "text",
+   "z": 5,
+   "x": 996,
+   "y": 615,
+   "w": 90,
+   "h": 29,
+   "text": "{{u:speedLc}}",
+   "font": "s_unit",
+   "color": "dim",
+   "align": "left",
+   "toggle": "mapUp"
+  },
+  {
+   "id": "gear",
+   "type": "text",
+   "z": 5,
+   "x": 1080,
+   "y": 580,
+   "w": 70,
+   "h": 65,
+   "text": "{{gearnum}}",
+   "font": "s_gear",
+   "color": "fg",
+   "align": "center",
+   "toggle": "mapUp"
+  }
+ ]
+}

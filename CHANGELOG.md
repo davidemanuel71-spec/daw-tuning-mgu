@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.24.0 · Waze FULL SCREEN
+- Tema noua **Waze FULL SCREEN (tot ceasul)**: harta CarPlay/Waze pe tot ceasul 1920x720, ca varianta full screen din id7f. Fara harta revine ceasul BMW original; cu harta, viteza si treapta DAW jos la mijloc peste harta.
+
 ## 0.23.0 · optiunile Waze din id7f
 - In tab-ul Map (si in All settings): **Harta apare pe** (ceas, HUD, ambele, nicaieri), **Directii BMW** (ascunde/arata caseta BMW cat se vede harta), **HUD marime**, **HUD stanga/dreapta**, **HUD sus/jos**, **HUD peste pop-up**.
 - Aceleasi comenzi ca aplicatia lui dwz365365/id7f catre Waze on Cluster (ctl.sock pe loc, patch.sock ca sa ramana salvate). Cod scris de la zero in `shared/waze_opts.js`.
