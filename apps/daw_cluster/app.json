@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.19.2",
+  "version": "0.20.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -118,11 +118,15 @@
       "key": "hudLayout",
       "label": "Theme (when not by drive mode)",
       "type": "choice",
-      "default": "daw_stock",
+      "default": "daw_craciun",
       "options": [
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "daw_craciun",
+          "DAW Craciun"
         ],
         [
           "daw_stock",
@@ -215,6 +219,10 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_craciun",
+          "DAW Craciun"
+        ],
+        [
           "daw_stock",
           "Original (cu camera)"
         ],
@@ -299,6 +307,10 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_craciun",
+          "DAW Craciun"
+        ],
+        [
           "daw_stock",
           "Original (cu camera)"
         ],
@@ -381,6 +393,10 @@
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "daw_craciun",
+          "DAW Craciun"
         ],
         [
           "daw_stock",
@@ -471,6 +487,10 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "daw_craciun",
+          "DAW Craciun"
+        ],
+        [
           "daw_stock",
           "Original (cu camera)"
         ],
@@ -557,6 +577,10 @@
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "daw_craciun",
+          "DAW Craciun"
         ],
         [
           "daw_stock",
