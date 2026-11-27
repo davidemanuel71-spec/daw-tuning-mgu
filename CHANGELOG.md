@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.24.1
+- Waze FULL SCREEN: fara beculete de sarbatoare, fara caseta neagra sub viteza si fara treapta dubla (ramane doar viteza). Un layout cu "garland": false nu mai primeste beculetele.
+
 ## 0.24.0 · Waze FULL SCREEN
 - Tema noua **Waze FULL SCREEN (tot ceasul)**: harta CarPlay/Waze pe tot ceasul 1920x720, ca varianta full screen din id7f. Fara harta revine ceasul BMW original; cu harta, viteza si treapta DAW jos la mijloc peste harta.
 

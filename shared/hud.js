@@ -2049,7 +2049,7 @@ class HudApp {
             row.forEach((w) => { w.conn = best.ci; });
         }
         // the holiday light string (garland.js): its own image layers on a connection with room for them
-        const gk = this._garlandHoliday(name, shown);
+        const gk = layout.garland === false ? null : this._garlandHoliday(name, shown);   // "garland": false: no light string
         if (gk) {
             // an empty model badge (Badge tab "none") is not in the string's way
             const noBadge = !this._token('badge');

@@ -2,7 +2,7 @@
  "schemaVersion": 2,
  "name": "Waze FULL SCREEN",
  "theme": "dawblue",
- "_about": "Harta CarPlay/Waze pe tot ceasul 1920x720, ca prototipul full screen din dwz365365/id7f (target panel, map_rect 0,0,1920,720). Fara harta: ceasul BMW original. Cu harta: viteza si treapta noastre peste harta, jos la mijloc. Martorii si cutia de viteze BMW se vad peste.",
+ "_about": "Harta CarPlay/Waze pe tot ceasul 1920x720, ca prototipul full screen din dwz365365/id7f (target panel, map_rect 0,0,1920,720). Fara harta: ceasul BMW original. Cu harta: viteza si treapta noastre peste harta, jos la mijloc. Martorii si cutia de viteze BMW se vad peste. Fara beculete de sarbatoare (garland false), fara caseta neagra si fara treapta dubla: doar viteza.",
  "widgets": [
   {
    "id": "wazefull",
@@ -31,23 +31,6 @@
    "holeRadius": 0
   },
   {
-   "id": "spd_bg",
-   "type": "fill",
-   "class": "content",
-   "z": 3,
-   "x": 760,
-   "y": 570,
-   "w": 400,
-   "h": 90,
-   "color": [
-    0,
-    0,
-    0,
-    170
-   ],
-   "toggle": "mapUp"
-  },
-  {
    "id": "speed",
    "type": "text",
    "z": 5,
@@ -74,20 +57,7 @@
    "color": "dim",
    "align": "left",
    "toggle": "mapUp"
-  },
-  {
-   "id": "gear",
-   "type": "text",
-   "z": 5,
-   "x": 1080,
-   "y": 580,
-   "w": 70,
-   "h": 65,
-   "text": "{{gearnum}}",
-   "font": "s_gear",
-   "color": "fg",
-   "align": "center",
-   "toggle": "mapUp"
   }
- ]
+ ],
+ "garland": false
 }
