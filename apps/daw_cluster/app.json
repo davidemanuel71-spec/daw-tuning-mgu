@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.17.0",
+  "version": "0.17.1",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -118,39 +118,11 @@
       "key": "hudLayout",
       "label": "Theme (when not by drive mode)",
       "type": "choice",
-      "default": "daw_full_waze",
+      "default": "daw_stock",
       "options": [
         [
           "off",
           "Off (BMW's own cluster)"
-        ],
-        [
-          "daw_full_waze",
-          "DAW FULL WAZE"
-        ],
-        [
-          "daw_o1",
-          "Oval 1 · proportii corecte"
-        ],
-        [
-          "daw_o2",
-          "Oval 2 · lat, mai scund"
-        ],
-        [
-          "daw_r4",
-          "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r7",
-          "Rotund 7 · masca ta"
-        ],
-        [
-          "daw_r8",
-          "Rotund 8 · tot ecranul"
-        ],
-        [
-          "daw_red",
-          "Craciun Rosu"
         ],
         [
           "daw_stock",
@@ -175,34 +147,6 @@
           "Off (BMW's own cluster)"
         ],
         [
-          "daw_full_waze",
-          "DAW FULL WAZE"
-        ],
-        [
-          "daw_o1",
-          "Oval 1 · proportii corecte"
-        ],
-        [
-          "daw_o2",
-          "Oval 2 · lat, mai scund"
-        ],
-        [
-          "daw_r4",
-          "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r7",
-          "Rotund 7 · masca ta"
-        ],
-        [
-          "daw_r8",
-          "Rotund 8 · tot ecranul"
-        ],
-        [
-          "daw_red",
-          "Craciun Rosu"
-        ],
-        [
           "daw_stock",
           "Original (cu camera)"
         ]
@@ -219,34 +163,6 @@
           "Off (BMW's own cluster)"
         ],
         [
-          "daw_full_waze",
-          "DAW FULL WAZE"
-        ],
-        [
-          "daw_o1",
-          "Oval 1 · proportii corecte"
-        ],
-        [
-          "daw_o2",
-          "Oval 2 · lat, mai scund"
-        ],
-        [
-          "daw_r4",
-          "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r7",
-          "Rotund 7 · masca ta"
-        ],
-        [
-          "daw_r8",
-          "Rotund 8 · tot ecranul"
-        ],
-        [
-          "daw_red",
-          "Craciun Rosu"
-        ],
-        [
           "daw_stock",
           "Original (cu camera)"
         ]
@@ -261,34 +177,6 @@
         [
           "off",
           "Off (BMW's own cluster)"
-        ],
-        [
-          "daw_full_waze",
-          "DAW FULL WAZE"
-        ],
-        [
-          "daw_o1",
-          "Oval 1 · proportii corecte"
-        ],
-        [
-          "daw_o2",
-          "Oval 2 · lat, mai scund"
-        ],
-        [
-          "daw_r4",
-          "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r7",
-          "Rotund 7 · masca ta"
-        ],
-        [
-          "daw_r8",
-          "Rotund 8 · tot ecranul"
-        ],
-        [
-          "daw_red",
-          "Craciun Rosu"
         ],
         [
           "daw_stock",
@@ -311,34 +199,6 @@
           "Off (BMW's own cluster)"
         ],
         [
-          "daw_full_waze",
-          "DAW FULL WAZE"
-        ],
-        [
-          "daw_o1",
-          "Oval 1 · proportii corecte"
-        ],
-        [
-          "daw_o2",
-          "Oval 2 · lat, mai scund"
-        ],
-        [
-          "daw_r4",
-          "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r7",
-          "Rotund 7 · masca ta"
-        ],
-        [
-          "daw_r8",
-          "Rotund 8 · tot ecranul"
-        ],
-        [
-          "daw_red",
-          "Craciun Rosu"
-        ],
-        [
           "daw_stock",
           "Original (cu camera)"
         ]
@@ -357,34 +217,6 @@
         [
           "off",
           "Off (BMW's own cluster)"
-        ],
-        [
-          "daw_full_waze",
-          "DAW FULL WAZE"
-        ],
-        [
-          "daw_o1",
-          "Oval 1 · proportii corecte"
-        ],
-        [
-          "daw_o2",
-          "Oval 2 · lat, mai scund"
-        ],
-        [
-          "daw_r4",
-          "Rotund 4 · mare pastila"
-        ],
-        [
-          "daw_r7",
-          "Rotund 7 · masca ta"
-        ],
-        [
-          "daw_r8",
-          "Rotund 8 · tot ecranul"
-        ],
-        [
-          "daw_red",
-          "Craciun Rosu"
         ],
         [
           "daw_stock",
