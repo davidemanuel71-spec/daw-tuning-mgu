@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.15.4",
+  "version": "0.16.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -129,6 +129,30 @@
           "DAW FULL WAZE"
         ],
         [
+          "daw_r1",
+          "Rotund 1 · mic pastila"
+        ],
+        [
+          "daw_r2",
+          "Rotund 2 · mediu pastila"
+        ],
+        [
+          "daw_r3",
+          "Rotund 3 · mediu colturi mici"
+        ],
+        [
+          "daw_r4",
+          "Rotund 4 · mare pastila"
+        ],
+        [
+          "daw_r5",
+          "Rotund 5 · mare colturi mici"
+        ],
+        [
+          "daw_r6",
+          "Rotund 6 · maxim oval"
+        ],
+        [
           "daw_red",
           "Craciun Rosu"
         ],
@@ -159,6 +183,30 @@
           "DAW FULL WAZE"
         ],
         [
+          "daw_r1",
+          "Rotund 1 · mic pastila"
+        ],
+        [
+          "daw_r2",
+          "Rotund 2 · mediu pastila"
+        ],
+        [
+          "daw_r3",
+          "Rotund 3 · mediu colturi mici"
+        ],
+        [
+          "daw_r4",
+          "Rotund 4 · mare pastila"
+        ],
+        [
+          "daw_r5",
+          "Rotund 5 · mare colturi mici"
+        ],
+        [
+          "daw_r6",
+          "Rotund 6 · maxim oval"
+        ],
+        [
           "daw_red",
           "Craciun Rosu"
         ],
@@ -183,6 +231,30 @@
           "DAW FULL WAZE"
         ],
         [
+          "daw_r1",
+          "Rotund 1 · mic pastila"
+        ],
+        [
+          "daw_r2",
+          "Rotund 2 · mediu pastila"
+        ],
+        [
+          "daw_r3",
+          "Rotund 3 · mediu colturi mici"
+        ],
+        [
+          "daw_r4",
+          "Rotund 4 · mare pastila"
+        ],
+        [
+          "daw_r5",
+          "Rotund 5 · mare colturi mici"
+        ],
+        [
+          "daw_r6",
+          "Rotund 6 · maxim oval"
+        ],
+        [
           "daw_red",
           "Craciun Rosu"
         ],
@@ -205,6 +277,30 @@
         [
           "daw_full_waze",
           "DAW FULL WAZE"
+        ],
+        [
+          "daw_r1",
+          "Rotund 1 · mic pastila"
+        ],
+        [
+          "daw_r2",
+          "Rotund 2 · mediu pastila"
+        ],
+        [
+          "daw_r3",
+          "Rotund 3 · mediu colturi mici"
+        ],
+        [
+          "daw_r4",
+          "Rotund 4 · mare pastila"
+        ],
+        [
+          "daw_r5",
+          "Rotund 5 · mare colturi mici"
+        ],
+        [
+          "daw_r6",
+          "Rotund 6 · maxim oval"
         ],
         [
           "daw_red",
@@ -235,6 +331,30 @@
           "DAW FULL WAZE"
         ],
         [
+          "daw_r1",
+          "Rotund 1 · mic pastila"
+        ],
+        [
+          "daw_r2",
+          "Rotund 2 · mediu pastila"
+        ],
+        [
+          "daw_r3",
+          "Rotund 3 · mediu colturi mici"
+        ],
+        [
+          "daw_r4",
+          "Rotund 4 · mare pastila"
+        ],
+        [
+          "daw_r5",
+          "Rotund 5 · mare colturi mici"
+        ],
+        [
+          "daw_r6",
+          "Rotund 6 · maxim oval"
+        ],
+        [
           "daw_red",
           "Craciun Rosu"
         ],
@@ -261,6 +381,30 @@
         [
           "daw_full_waze",
           "DAW FULL WAZE"
+        ],
+        [
+          "daw_r1",
+          "Rotund 1 · mic pastila"
+        ],
+        [
+          "daw_r2",
+          "Rotund 2 · mediu pastila"
+        ],
+        [
+          "daw_r3",
+          "Rotund 3 · mediu colturi mici"
+        ],
+        [
+          "daw_r4",
+          "Rotund 4 · mare pastila"
+        ],
+        [
+          "daw_r5",
+          "Rotund 5 · mare colturi mici"
+        ],
+        [
+          "daw_r6",
+          "Rotund 6 · maxim oval"
         ],
         [
           "daw_red",
