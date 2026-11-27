@@ -1,0 +1,46 @@
+{
+ "schemaVersion": 2,
+ "name": "Waze hexagon ca in poza",
+ "theme": "dawred",
+ "_about": "Harta in hexagon intre cadrane, ca in imaginea Craciun Rosu; fill transparent in afara hartii fillWhen mapUp.",
+ "widgets": [
+  {
+   "id": "wazewin",
+   "type": "fill",
+   "class": "content",
+   "z": 0,
+   "x": 460,
+   "y": 150,
+   "w": 1000,
+   "h": 410,
+   "color": [
+    0,
+    0,
+    0,
+    255
+   ],
+   "hole": [
+    460,
+    150,
+    1000,
+    410
+   ],
+   "holeWhen": "mapUp",
+   "fillWhen": "mapUp",
+   "holeInset": 0,
+   "holeRadius": 0,
+   "holeCut": 95
+  },
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  }
+ ]
+}
