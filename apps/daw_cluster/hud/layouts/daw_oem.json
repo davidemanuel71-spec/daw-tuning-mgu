@@ -1,0 +1,45 @@
+{
+ "schemaVersion": 2,
+ "name": "Waze ca originalul",
+ "theme": "dawred",
+ "_about": "Fereastra hartii BMW masurata din poza cu grila: x700-1250 y130-620.",
+ "widgets": [
+  {
+   "id": "wazewin",
+   "type": "fill",
+   "class": "content",
+   "z": 0,
+   "x": 700,
+   "y": 130,
+   "w": 550,
+   "h": 490,
+   "color": [
+    0,
+    0,
+    0,
+    255
+   ],
+   "hole": [
+    700,
+    130,
+    550,
+    490
+   ],
+   "holeWhen": "mapUp",
+   "fillWhen": "mapUp",
+   "holeInset": 0,
+   "holeRadius": 70
+  },
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  }
+ ]
+}
