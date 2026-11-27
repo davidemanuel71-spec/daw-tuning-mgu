@@ -1,6 +1,6 @@
 {
  "schemaVersion": 2,
- "name": "Waze calibrat",
+ "name": "Waze calibrat (fara logo)",
  "theme": "dawred",
  "_about": "Fereastra x680-1390 y130-620: in afara cutiei negre BMW (x1406-1597,y342-419), a vitezei mari (x450-600) si a limitelor (y>=600, x530-650).",
  "widgets": [
@@ -30,17 +30,6 @@
    "holeInset": 0,
    "holeRadius": 70,
    "holeCut": 0
-  },
-  {
-   "id": "daw_logo",
-   "type": "logo",
-   "image": "daw",
-   "class": "content",
-   "z": 6,
-   "x": 905,
-   "y": 134,
-   "w": 110,
-   "h": 110
   }
  ]
 }
