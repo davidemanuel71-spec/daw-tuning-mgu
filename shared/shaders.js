@@ -1805,8 +1805,6 @@ void main() {
         float hd = length(max(hq, 0.0)) + min(max(hq.x, hq.y), 0.0) - u_holeR;
         if (u_holeCut > 0.0) { vec2 ee = abs(p - (u_hole.xy + hs)) - hs; hd = max(max(ee.x, ee.y), (ee.x + ee.y + u_holeCut) * 0.7071); if (u_cuts.x > 0.0) { vec2 cc = (p.y < u_hole.y + hs.y) ? u_cuts.xy : u_cuts.zw; hd = max(max(ee.x, ee.y), (ee.x * cc.y + ee.y * cc.x + cc.x * cc.y) / length(cc)); } hd = hd * 0.1; }
         alpha = clamp(hd + 0.5, 0.0, 1.0);
-        // a thin grey frame round the window
-        c = put(c, GREY, cov(abs(hd - 2.0) - 1.0) * 0.8);
         alpha = max(alpha, cov(abs(hd - 2.0) - 1.0) * 0.8);
     }
     if (u_clear.z > 0.0) {
