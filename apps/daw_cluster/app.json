@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.20.2",
+  "version": "0.20.3",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -133,6 +133,10 @@
           "Waze 1460x390 (tema ta)"
         ],
         [
+          "daw_rect",
+          "Waze dreptunghi 1460x390 (fara negru)"
+        ],
+        [
           "daw_wp1",
           "Waze plin 1"
         ],
@@ -199,6 +203,10 @@
           "Waze 1460x390 (tema ta)"
         ],
         [
+          "daw_rect",
+          "Waze dreptunghi 1460x390 (fara negru)"
+        ],
+        [
           "daw_wp1",
           "Waze plin 1"
         ],
@@ -259,6 +267,10 @@
           "Waze 1460x390 (tema ta)"
         ],
         [
+          "daw_rect",
+          "Waze dreptunghi 1460x390 (fara negru)"
+        ],
+        [
           "daw_wp1",
           "Waze plin 1"
         ],
@@ -317,6 +329,10 @@
         [
           "daw_map",
           "Waze 1460x390 (tema ta)"
+        ],
+        [
+          "daw_rect",
+          "Waze dreptunghi 1460x390 (fara negru)"
         ],
         [
           "daw_wp1",
@@ -383,6 +399,10 @@
           "Waze 1460x390 (tema ta)"
         ],
         [
+          "daw_rect",
+          "Waze dreptunghi 1460x390 (fara negru)"
+        ],
+        [
           "daw_wp1",
           "Waze plin 1"
         ],
@@ -445,6 +465,10 @@
         [
           "daw_map",
           "Waze 1460x390 (tema ta)"
+        ],
+        [
+          "daw_rect",
+          "Waze dreptunghi 1460x390 (fara negru)"
         ],
         [
           "daw_wp1",
