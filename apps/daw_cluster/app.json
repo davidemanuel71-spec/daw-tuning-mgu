@@ -2,7 +2,7 @@
   "id": "daw_cluster",
   "title": "DAW Tuning Cluster",
   "description": "DAW Tuning themes for the iDrive 7 instrument cluster: the DAW look in red, blue, green, violet and orange, three Christmas editions, and DAW Original (BMW's own cluster with just the DAW logo)",
-  "version": "0.17.1",
+  "version": "0.18.0",
   "vendor": "custom",
   "loggingId": "DAW1",
   "autostart": true,
@@ -127,6 +127,34 @@
         [
           "daw_stock",
           "Original (cu camera)"
+        ],
+        [
+          "daw_o_brad",
+          "Original · Brad"
+        ],
+        [
+          "daw_o_fulgi",
+          "Original · Fulgi"
+        ],
+        [
+          "daw_o_mix",
+          "Original · Brad si fulg"
+        ],
+        [
+          "daw_o_brazi",
+          "Original · 4 Brazi"
+        ],
+        [
+          "daw_o_fulgi4",
+          "Original · 4 Fulgi"
+        ],
+        [
+          "daw_o_bigtree",
+          "Original · Brad mare"
+        ],
+        [
+          "daw_o_pair",
+          "Original · Doi brazi"
         ]
       ]
     },
@@ -149,6 +177,34 @@
         [
           "daw_stock",
           "Original (cu camera)"
+        ],
+        [
+          "daw_o_brad",
+          "Original · Brad"
+        ],
+        [
+          "daw_o_fulgi",
+          "Original · Fulgi"
+        ],
+        [
+          "daw_o_mix",
+          "Original · Brad si fulg"
+        ],
+        [
+          "daw_o_brazi",
+          "Original · 4 Brazi"
+        ],
+        [
+          "daw_o_fulgi4",
+          "Original · 4 Fulgi"
+        ],
+        [
+          "daw_o_bigtree",
+          "Original · Brad mare"
+        ],
+        [
+          "daw_o_pair",
+          "Original · Doi brazi"
         ]
       ]
     },
@@ -165,6 +221,34 @@
         [
           "daw_stock",
           "Original (cu camera)"
+        ],
+        [
+          "daw_o_brad",
+          "Original · Brad"
+        ],
+        [
+          "daw_o_fulgi",
+          "Original · Fulgi"
+        ],
+        [
+          "daw_o_mix",
+          "Original · Brad si fulg"
+        ],
+        [
+          "daw_o_brazi",
+          "Original · 4 Brazi"
+        ],
+        [
+          "daw_o_fulgi4",
+          "Original · 4 Fulgi"
+        ],
+        [
+          "daw_o_bigtree",
+          "Original · Brad mare"
+        ],
+        [
+          "daw_o_pair",
+          "Original · Doi brazi"
         ]
       ]
     },
@@ -181,6 +265,34 @@
         [
           "daw_stock",
           "Original (cu camera)"
+        ],
+        [
+          "daw_o_brad",
+          "Original · Brad"
+        ],
+        [
+          "daw_o_fulgi",
+          "Original · Fulgi"
+        ],
+        [
+          "daw_o_mix",
+          "Original · Brad si fulg"
+        ],
+        [
+          "daw_o_brazi",
+          "Original · 4 Brazi"
+        ],
+        [
+          "daw_o_fulgi4",
+          "Original · 4 Fulgi"
+        ],
+        [
+          "daw_o_bigtree",
+          "Original · Brad mare"
+        ],
+        [
+          "daw_o_pair",
+          "Original · Doi brazi"
         ]
       ]
     },
@@ -201,6 +313,34 @@
         [
           "daw_stock",
           "Original (cu camera)"
+        ],
+        [
+          "daw_o_brad",
+          "Original · Brad"
+        ],
+        [
+          "daw_o_fulgi",
+          "Original · Fulgi"
+        ],
+        [
+          "daw_o_mix",
+          "Original · Brad si fulg"
+        ],
+        [
+          "daw_o_brazi",
+          "Original · 4 Brazi"
+        ],
+        [
+          "daw_o_fulgi4",
+          "Original · 4 Fulgi"
+        ],
+        [
+          "daw_o_bigtree",
+          "Original · Brad mare"
+        ],
+        [
+          "daw_o_pair",
+          "Original · Doi brazi"
         ]
       ]
     },
@@ -221,6 +361,34 @@
         [
           "daw_stock",
           "Original (cu camera)"
+        ],
+        [
+          "daw_o_brad",
+          "Original · Brad"
+        ],
+        [
+          "daw_o_fulgi",
+          "Original · Fulgi"
+        ],
+        [
+          "daw_o_mix",
+          "Original · Brad si fulg"
+        ],
+        [
+          "daw_o_brazi",
+          "Original · 4 Brazi"
+        ],
+        [
+          "daw_o_fulgi4",
+          "Original · 4 Fulgi"
+        ],
+        [
+          "daw_o_bigtree",
+          "Original · Brad mare"
+        ],
+        [
+          "daw_o_pair",
+          "Original · Doi brazi"
         ]
       ]
     },

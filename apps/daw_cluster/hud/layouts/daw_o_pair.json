@@ -1,0 +1,43 @@
+{
+ "schemaVersion": 2,
+ "name": "Original · Doi brazi",
+ "theme": "dawred",
+ "_about": "BMW's own cluster; a big Christmas tree with colour-changing bulbs drawn inside it.",
+ "widgets": [
+  {
+   "id": "daw_logo",
+   "type": "logo",
+   "image": "daw",
+   "class": "content",
+   "z": 6,
+   "x": 905,
+   "y": 134,
+   "w": 110,
+   "h": 110
+  },
+  {
+   "id": "t1",
+   "type": "tree",
+   "kind": "tree",
+   "class": "content",
+   "z": 5,
+   "x": 560,
+   "y": 170,
+   "w": 260,
+   "h": 360,
+   "stepMs": 700
+  },
+  {
+   "id": "t2",
+   "type": "tree",
+   "kind": "tree",
+   "class": "content",
+   "z": 5,
+   "x": 1100,
+   "y": 170,
+   "w": 260,
+   "h": 360,
+   "stepMs": 700
+  }
+ ]
+}
